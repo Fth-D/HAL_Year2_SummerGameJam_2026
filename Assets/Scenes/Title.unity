@@ -640,9 +640,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 924117033}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Foot
-  m_TagString: Untagged
+  m_TagString: Foot
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -679,7 +679,7 @@ GameObject:
   - component: {fileID: 991050119}
   - component: {fileID: 991050118}
   m_Layer: 6
-  m_Name: Circle
+  m_Name: Ball
   m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -738,9 +738,9 @@ DistanceJoint2D:
   m_BreakAction: 3
   m_AutoConfigureConnectedAnchor: 0
   m_Anchor: {x: 0, y: 0}
-  m_ConnectedAnchor: {x: 0.20743942, y: -0.10063076}
+  m_ConnectedAnchor: {x: -5.5, y: -0.42}
   m_AutoConfigureDistance: 1
-  m_Distance: 9.276829
+  m_Distance: 3.807886
   m_MaxDistanceOnly: 0
 --- !u!50 &991050115
 Rigidbody2D:
@@ -755,8 +755,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDamping: 0
-  m_AngularDamping: 0.05
+  m_LinearDamping: 2
+  m_AngularDamping: 3
   m_GravityScale: 0
   m_Material: {fileID: 6200000, guid: 2da292ff266db974498ba9df390e2768, type: 2}
   m_IncludeLayers:
@@ -767,7 +767,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!212 &991050116
 SpriteRenderer:
@@ -1148,7 +1148,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!212 &1218065168
 SpriteRenderer:
