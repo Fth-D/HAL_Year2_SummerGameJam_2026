@@ -12,7 +12,7 @@ public class Circle : MonoBehaviour
     private Rigidbody2D playerBody;
     private Rigidbody2D rb;
 
-    private float kickSpeed = 5000.0f;
+    private float kickSpeed = 50.0f;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()

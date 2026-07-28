@@ -42,6 +42,36 @@ public class ChainBallController2D : MonoBehaviour
     private float swingInput;
     private bool wasSpinning;
 
+    [Header("专注模式")]
+    [SerializeField]
+    private LineRenderer directionLine;
+
+    [Header("方向线长度")]
+    [SerializeField]
+    private float minimumDirectionLineLength = 0.5f;
+
+    [SerializeField]
+    private float maximumDirectionLineLength = 3.0f;
+
+    [Header("方向显示最低速度")]
+    [SerializeField]
+    private float minimumDirectionSpeed = 0.2f;
+
+    [Header("慢动作倍率")]
+    [SerializeField]
+    [Range(0.05f, 1.0f)]
+    private float focusTimeScale = 0.2f;
+
+    // 当前是否处于Shift专注模式
+    private bool isFocusing;
+
+    // 用来检测Shift的按下和松开
+    private bool wasFocusHeld;
+
+    // 用于恢复进入慢动作前的时间设置
+    private float previousTimeScale;
+    private float previousFixedDeltaTime;
+
     private void Awake()
     {
         ballBody = GetComponent<Rigidbody2D>();
@@ -62,11 +92,13 @@ public class ChainBallController2D : MonoBehaviour
         IgnorePlayerCollision();
         ConnectJointToPlayer();
         ConfigureLineRenderer();
+        ConfigureDirectionLine();
     }
 
     private void Update()
     {
         ReadInput();
+        UpdateFocusInput();
     }
 
     private void FixedUpdate()
@@ -118,6 +150,7 @@ public class ChainBallController2D : MonoBehaviour
     private void LateUpdate()
     {
         DrawChain();
+        DrawDirectionLine();
     }
 
     private void ReadInput()
@@ -398,8 +431,18 @@ public class ChainBallController2D : MonoBehaviour
     private void OnDisable()
     {
         /*
-         * 脚本被关闭时恢复Player连接，
-         * 防止Joint永久留在隐藏支点上。
+      * 如果脚本在慢动作期间被关闭，
+      * 必须恢复正常时间。
+      */
+        if (isFocusing)
+        {
+            EndFocus();
+        }
+
+        wasFocusHeld = false;
+
+        /*
+         * 原来已有的Joint恢复逻辑。
          */
         if (distanceJoint != null &&
             playerBody != null)
@@ -414,5 +457,203 @@ public class ChainBallController2D : MonoBehaviour
         {
             Destroy(spinPivotObject);
         }
+    }
+
+    private void UpdateFocusInput()
+    {
+        Keyboard keyboard = Keyboard.current;
+
+        if (keyboard == null)
+        {
+            return;
+        }
+
+        bool focusHeld =
+            keyboard.leftShiftKey.isPressed ||
+            keyboard.rightShiftKey.isPressed;
+
+        // 刚刚按下Shift
+        if (focusHeld && !wasFocusHeld)
+        {
+            BeginFocus();
+        }
+
+        // 刚刚松开Shift
+        if (!focusHeld && wasFocusHeld)
+        {
+            EndFocus();
+        }
+
+        wasFocusHeld = focusHeld;
+    }
+
+    private void BeginFocus()
+    {
+        if (isFocusing)
+        {
+            return;
+        }
+
+        isFocusing = true;
+
+        Debug.Log(
+       $"进入专注模式，球速={ballBody.linearVelocity.magnitude}，" +
+       $"方向线={directionLine}"
+   );
+
+
+        // 保存进入慢动作前的设置
+        previousTimeScale =
+            Time.timeScale;
+
+        previousFixedDeltaTime =
+            Time.fixedDeltaTime;
+
+        /*
+         * 把整个游戏减速。
+         * 例如focusTimeScale为0.2，
+         * 游戏就以五分之一速度运行。
+         */
+        Time.timeScale =
+            focusTimeScale;
+
+        /*
+         * 根据timeScale调整物理更新时间，
+         * 避免慢动作时物理表现过于跳跃。
+         */
+        float timeScaleRatio =
+            focusTimeScale /
+            Mathf.Max(previousTimeScale, 0.001f);
+
+        Time.fixedDeltaTime =
+            previousFixedDeltaTime *
+            timeScaleRatio;
+    }
+
+    private void EndFocus()
+    {
+        if (!isFocusing)
+        {
+            return;
+        }
+
+        isFocusing = false;
+
+        // 恢复进入慢动作前的设置
+        Time.timeScale =
+            previousTimeScale;
+
+        Time.fixedDeltaTime =
+            previousFixedDeltaTime;
+
+        if (directionLine != null)
+        {
+            directionLine.enabled = false;
+        }
+    }
+
+    //初始化方向线
+    private void ConfigureDirectionLine()
+    {
+        if (directionLine == null)
+        {
+            Debug.LogError("Direction Line没有设置");
+            return;
+        }
+
+        directionLine.positionCount = 2;
+        directionLine.useWorldSpace = true;
+
+        // 测试时设置得明显一点
+        directionLine.startWidth = 0.15f;
+        directionLine.endWidth = 0.15f;
+
+        directionLine.startColor = Color.red;
+        directionLine.endColor = Color.red;
+
+        // 保证显示在其他Sprite上面
+        directionLine.sortingOrder = 100;
+
+        directionLine.enabled = false;
+    }
+
+    //绘制当前前进方向
+    private void DrawDirectionLine()
+    {
+        if (directionLine == null)
+        {
+            return;
+        }
+
+        // 只有按住Shift时才显示
+        if (!isFocusing)
+        {
+            directionLine.enabled = false;
+            return;
+        }
+
+        Vector2 currentVelocity =
+            ballBody.linearVelocity;
+
+        float currentSpeed =
+            currentVelocity.magnitude;
+
+        // 球速度太低时，不显示方向
+        if (currentSpeed < minimumDirectionSpeed)
+        {
+            directionLine.enabled = false;
+            return;
+        }
+
+        // 当前真实前进方向
+        Vector2 direction =
+            currentVelocity.normalized;
+
+        /*
+         * 计算当前速度占最高速度的比例。
+         *
+         * 例如：
+         * 当前速度7.5
+         * 最大速度15
+         * 比例就是0.5
+         */
+        float speedRatio =
+            Mathf.Clamp01(
+                currentSpeed /
+                maximumBallSpeed
+            );
+
+        /*
+         * 根据速度比例计算箭头长度。
+         *
+         * 慢时接近最短长度，
+         * 快时接近最长长度。
+         */
+        float currentLineLength =
+            Mathf.Lerp(
+                minimumDirectionLineLength,
+                maximumDirectionLineLength,
+                speedRatio
+            );
+
+        Vector2 startPosition =
+            ballBody.position;
+
+        Vector2 endPosition =
+            startPosition +
+            direction *
+            currentLineLength;
+
+        directionLine.enabled = true;
+
+        directionLine.SetPosition(
+            0,
+            startPosition
+        );
+
+        directionLine.SetPosition(
+            1,
+            endPosition
+        );
     }
 }
