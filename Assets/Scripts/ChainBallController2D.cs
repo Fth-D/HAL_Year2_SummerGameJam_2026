@@ -23,6 +23,10 @@ public class ChainBallController2D : MonoBehaviour
     [SerializeField]
     private float swingForce = 35.0f;
 
+    [Header("挥人设置")]
+    [SerializeField]
+    private float playerSwingForce = 35.0f;
+
     [SerializeField]
     private float maximumBallSpeed = 30.0f;
 
@@ -177,7 +181,11 @@ public class ChainBallController2D : MonoBehaviour
                 isPlayerSwinging;
         }
         // 转人模式优先，防止两套系统同时运行
-        if (isSpinning && !isPlayerSwinging)
+        if (isPlayerSwinging)
+        {
+            SwingPlayer();
+        }
+        else if (isSpinning)
         {
             SwingBall();
         }
@@ -329,14 +337,12 @@ public class ChainBallController2D : MonoBehaviour
     private void BeginPlayerSwing()
     {
         if (ballPivotBody == null ||
-            ballLockJoint == null)
+       ballLockJoint == null)
         {
             return;
         }
 
-        /*
-         * 把隐藏支点移动到球当前的位置。
-         */
+        // 把固定支点放到球当前的位置
         ballPivotBody.position =
             ballBody.position;
 
@@ -346,25 +352,17 @@ public class ChainBallController2D : MonoBehaviour
         ballPivotBody.angularVelocity =
             0.0f;
 
-        /*
-         * 测试阶段先清除球原来的速度，
-         * 避免开启FixedJoint时猛烈抖动。
-         */
+        // 球进入固定状态前先停止
         ballBody.linearVelocity =
             Vector2.zero;
 
         ballBody.angularVelocity =
             0.0f;
 
-        /*
-         * 转人模式需要保持：
-         * Ball的DistanceJoint连接Player。
-         */
+        // 保持Ball和Player之间原来的DistanceJoint
         ConnectJointToPlayer();
 
-        /*
-         * 开启FixedJoint，把球固定在隐藏支点上。
-         */
+        // 固定球
         ballLockJoint.connectedBody =
             ballPivotBody;
 
@@ -380,11 +378,9 @@ public class ChainBallController2D : MonoBehaviour
             return;
         }
 
-        // 松开I/P后，球恢复自由运动
         ballLockJoint.enabled =
             false;
 
-        // 恢复正常的球与Player连接
         ConnectJointToPlayer();
     }
     private void MoveSpinPivotToHand()
@@ -517,6 +513,46 @@ public class ChainBallController2D : MonoBehaviour
             * maximumBallSpeed;
     }
 
+    private void SwingPlayer()
+    {
+        if (ballPivotBody == null)
+        {
+            return;
+        }
+
+        Vector2 centerPosition =
+            ballPivotBody.position;
+
+        // 从固定球指向Player
+        Vector2 radiusDirection =
+            playerBody.position - centerPosition;
+
+        if (radiusDirection.sqrMagnitude < 0.001f)
+        {
+            return;
+        }
+
+        radiusDirection.Normalize();
+
+        // 半径方向旋转90度，得到切线方向
+        Vector2 tangentDirection =
+            new Vector2(
+                -radiusDirection.y,
+                radiusDirection.x
+            );
+
+        Vector2 swingVector =
+            tangentDirection
+            * playerSwingInput
+            * playerSwingForce;
+
+        // 每个FixedUpdate持续加力
+        playerBody.AddForce(
+            swingVector,
+            ForceMode2D.Force
+        );
+    }
+
     private Vector2 GetHandPosition()
     {
         if (handPoint != null)
@@ -619,6 +655,11 @@ public class ChainBallController2D : MonoBehaviour
         if (spinPivotObject != null)
         {
             Destroy(spinPivotObject);
+        }
+
+        if (ballPivotObject != null)
+        {
+            Destroy(ballPivotObject);
         }
     }
 
