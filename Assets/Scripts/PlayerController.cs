@@ -28,10 +28,20 @@ namespace Platformer.Mechanics
         /// </summary>
         public float jumpTakeOffSpeed = 7;
 
+        [Header("跳躍緩衝（避免瞬間位移衝擊鏈子物理）")]
+        [Tooltip("跳躍起跳速度從 0 爬升到最終值所花的時間（秒）。數值越小手感越接近原本的瞬間彈起，數值越大越軟、但對鏈子衝擊越小。")]
+        [SerializeField] private float jumpRampTime = 0.06f;
+
+        private float jumpRampElapsed;
+        private float jumpFinalVelocityY;
+        private bool isJumpRamping;
+
         public JumpState jumpState = JumpState.Grounded;
         private bool stopJump;
-        /*internal new*/ public Collider2D collider2d;
-        /*internal new*/ public AudioSource audioSource;
+        /*internal new*/
+        public Collider2D collider2d;
+        /*internal new*/
+        public AudioSource audioSource;
         public Health health;
         public bool controlEnabled = true;
 
@@ -56,7 +66,7 @@ namespace Platformer.Mechanics
 
             m_MoveAction = InputSystem.actions.FindAction("Player/Move");
             m_JumpAction = InputSystem.actions.FindAction("Player/Jump");
-            
+
             m_MoveAction.Enable();
             m_JumpAction.Enable();
         }
@@ -116,7 +126,11 @@ namespace Platformer.Mechanics
         {
             if (jump && IsGrounded)
             {
-                velocity.y = jumpTakeOffSpeed * model.jumpModifier;
+                // 原本：velocity.y = jumpTakeOffSpeed * model.jumpModifier;（瞬間賦值）
+                // 改成：記錄目標速度，交給下面的爬升邏輯在短時間內平滑拉上去
+                jumpFinalVelocityY = jumpTakeOffSpeed * model.jumpModifier;
+                jumpRampElapsed = 0f;
+                isJumpRamping = true;
                 jump = false;
             }
             else if (stopJump)
@@ -125,6 +139,23 @@ namespace Platformer.Mechanics
                 if (velocity.y > 0)
                 {
                     velocity.y = velocity.y * model.jumpDeceleration;
+                }
+                // 放開跳躍鍵時中止爬升，直接進入減速，避免爬升邏輯跟放手減速打架
+                isJumpRamping = false;
+            }
+
+            if (isJumpRamping)
+            {
+                jumpRampElapsed += Time.deltaTime;
+                float t = (jumpRampTime > 0f)
+                    ? Mathf.Clamp01(jumpRampElapsed / jumpRampTime)
+                    : 1f;
+
+                velocity.y = Mathf.Lerp(0f, jumpFinalVelocityY, t);
+
+                if (t >= 1f)
+                {
+                    isJumpRamping = false;
                 }
             }
 
