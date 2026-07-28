@@ -29,6 +29,7 @@ public class ChainBallController2D : MonoBehaviour
     private Rigidbody2D ballBody;
     private DistanceJoint2D distanceJoint;
 
+
     // 转球时使用的隐藏支点
     private GameObject spinPivotObject;
     private Rigidbody2D spinPivotBody;
@@ -39,8 +40,21 @@ public class ChainBallController2D : MonoBehaviour
     // 上一帧是否连接隐藏支点
     private bool wasUsingSpinPivot;
 
+    // 转人模式：固定球使用的隐藏支点
+    private GameObject ballPivotObject;
+    private Rigidbody2D ballPivotBody;
+
+    // 转人模式：把球锁在隐藏支点上的Joint
+    private FixedJoint2D ballLockJoint;
+    //是否转球
     private float swingInput;
+    //上一帧是否转球
     private bool wasSpinning;
+    // I/P控制Player旋转
+    private float playerSwingInput;
+
+    // 记录上一帧是否处于转人状态
+    private bool wasPlayerSwinging;
 
     [Header("专注模式")]
     [SerializeField]
@@ -89,6 +103,7 @@ public class ChainBallController2D : MonoBehaviour
 
         ConfigureJoint();
         CreateSpinPivot();
+        CreateBallPivot();
         IgnorePlayerCollision();
         ConnectJointToPlayer();
         ConfigureLineRenderer();
@@ -107,6 +122,11 @@ public class ChainBallController2D : MonoBehaviour
         bool isSpinning =
             !Mathf.Approximately(swingInput, 0.0f);
 
+        bool isPlayerSwinging =
+        !Mathf.Approximately(
+        playerSwingInput,
+        0.0f
+    );
         /*
          * 满足任意条件时，球不影响Player：
          *
@@ -115,8 +135,11 @@ public class ChainBallController2D : MonoBehaviour
          * 3. 正在按W/Space跳跃
          */
         bool shouldUseSpinPivot =
-            isSpinning ||
-            hasPlayerMoveInput;
+    !isPlayerSwinging &&
+    (
+        isSpinning ||
+        hasPlayerMoveInput
+    );
 
         // 隐藏支点始终跟随Player
         MoveSpinPivotToHand();
@@ -138,8 +161,23 @@ public class ChainBallController2D : MonoBehaviour
             wasUsingSpinPivot = shouldUseSpinPivot;
         }
 
-        // 只有按Q/E时才主动给球旋转力
-        if (isSpinning)
+        // I/P状态发生变化时，固定或解除固定Ball
+        if (isPlayerSwinging != wasPlayerSwinging)
+        {
+            if (isPlayerSwinging)
+            {
+                BeginPlayerSwing();
+            }
+            else
+            {
+                EndPlayerSwing();
+            }
+
+            wasPlayerSwinging =
+                isPlayerSwinging;
+        }
+        // 转人模式优先，防止两套系统同时运行
+        if (isSpinning && !isPlayerSwinging)
         {
             SwingBall();
         }
@@ -156,6 +194,7 @@ public class ChainBallController2D : MonoBehaviour
     private void ReadInput()
     {
         swingInput = 0.0f;
+        playerSwingInput = 0.0f;
         hasPlayerMoveInput = false;
 
         Keyboard keyboard = Keyboard.current;
@@ -174,6 +213,17 @@ public class ChainBallController2D : MonoBehaviour
         if (keyboard.eKey.isPressed)
         {
             swingInput += 5.0f;
+        }
+
+        // I/P：临时测试转人
+        if (keyboard.iKey.isPressed)
+        {
+            playerSwingInput -= 5.0f;
+        }
+
+        if (keyboard.pKey.isPressed)
+        {
+            playerSwingInput += 5.0f;
         }
 
         // A/D表示Player正在主动移动
@@ -223,7 +273,120 @@ public class ChainBallController2D : MonoBehaviour
         spinPivotBody.interpolation =
             RigidbodyInterpolation2D.Interpolate;
     }
+    //球固定点
+    private void CreateBallPivot()
+    {
+        // 创建转人模式使用的隐藏固定点
+        ballPivotObject =
+            new GameObject("[Runtime] Ball Fixed Pivot");
 
+        ballPivotObject.transform.position =
+            ballBody.position;
+
+        // 隐藏固定点使用Kinematic刚体
+        ballPivotBody =
+            ballPivotObject.AddComponent<Rigidbody2D>();
+
+        ballPivotBody.bodyType =
+            RigidbodyType2D.Kinematic;
+
+        ballPivotBody.gravityScale =
+            0.0f;
+
+        ballPivotBody.linearVelocity =
+            Vector2.zero;
+
+        ballPivotBody.angularVelocity =
+            0.0f;
+
+        ballPivotBody.interpolation =
+            RigidbodyInterpolation2D.Interpolate;
+
+        // 在Ball上创建FixedJoint2D
+        ballLockJoint =
+            gameObject.AddComponent<FixedJoint2D>();
+
+        ballLockJoint.autoConfigureConnectedAnchor =
+            false;
+
+        ballLockJoint.anchor =
+            Vector2.zero;
+
+        ballLockJoint.connectedAnchor =
+            Vector2.zero;
+
+        ballLockJoint.connectedBody =
+            ballPivotBody;
+
+        ballLockJoint.enableCollision =
+            false;
+
+        // 初始关闭，按I/P时才打开
+        ballLockJoint.enabled =
+            false;
+    }
+    //固定球的函数
+    private void BeginPlayerSwing()
+    {
+        if (ballPivotBody == null ||
+            ballLockJoint == null)
+        {
+            return;
+        }
+
+        /*
+         * 把隐藏支点移动到球当前的位置。
+         */
+        ballPivotBody.position =
+            ballBody.position;
+
+        ballPivotBody.linearVelocity =
+            Vector2.zero;
+
+        ballPivotBody.angularVelocity =
+            0.0f;
+
+        /*
+         * 测试阶段先清除球原来的速度，
+         * 避免开启FixedJoint时猛烈抖动。
+         */
+        ballBody.linearVelocity =
+            Vector2.zero;
+
+        ballBody.angularVelocity =
+            0.0f;
+
+        /*
+         * 转人模式需要保持：
+         * Ball的DistanceJoint连接Player。
+         */
+        ConnectJointToPlayer();
+
+        /*
+         * 开启FixedJoint，把球固定在隐藏支点上。
+         */
+        ballLockJoint.connectedBody =
+            ballPivotBody;
+
+        ballLockJoint.enabled =
+            true;
+    }
+
+    //解除固定球
+    private void EndPlayerSwing()
+    {
+        if (ballLockJoint == null)
+        {
+            return;
+        }
+
+        // 松开I/P后，球恢复自由运动
+        ballLockJoint.enabled =
+            false;
+
+        // 恢复正常的球与Player连接
+        ConnectJointToPlayer();
+    }
     private void MoveSpinPivotToHand()
     {
         if (spinPivotBody == null)
