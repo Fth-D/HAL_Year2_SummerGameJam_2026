@@ -3,8 +3,19 @@ using UnityEngine.InputSystem;
 
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(DistanceJoint2D))]
+
 public class ChainBallController2D : MonoBehaviour
 {
+    [Header("Socket State")]
+    [SerializeField]
+    private bool isAttachedToSocket;
+
+    private Transform currentSocketPoint;
+    private RigidbodyType2D bodyTypeBeforeSocket;
+    private float gravityScaleBeforeSocket;
+
+    public bool IsAttachedToSocket => isAttachedToSocket;
+
     [Header("连接对象")]
     [SerializeField]
     private Rigidbody2D playerBody;
@@ -215,24 +226,22 @@ public class ChainBallController2D : MonoBehaviour
         // Q/E控制链球旋转
         if (keyboard.qKey.isPressed)
         {
-            swingInput -= 5.0f;
+            if (isAttachedToSocket)
+            {
+                playerSwingInput -= 5.0f;
+            }
+            else swingInput -= 5.0f;
         }
 
         if (keyboard.eKey.isPressed)
         {
-            swingInput += 5.0f;
+            if (isAttachedToSocket)
+            {
+                playerSwingInput += 5.0f;
+            }
+            else swingInput += 5.0f;
         }
 
-        // I/P：临时测试转人
-        if (keyboard.iKey.isPressed)
-        {
-            playerSwingInput -= 5.0f;
-        }
-
-        if (keyboard.pKey.isPressed)
-        {
-            playerSwingInput += 5.0f;
-        }
 
         // A/D表示Player正在主动移动
         //W和空格表示正在跳跃
@@ -373,6 +382,7 @@ public class ChainBallController2D : MonoBehaviour
     //解除固定球
     private void EndPlayerSwing()
     {
+        DetachFromSocket();
         if (ballLockJoint == null)
         {
             return;
@@ -515,6 +525,12 @@ public class ChainBallController2D : MonoBehaviour
 
     private void SwingPlayer()
     {
+
+        if (!isAttachedToSocket)
+        {
+            return;
+        }
+
         if (ballPivotBody == null)
         {
             return;
@@ -860,5 +876,100 @@ public class ChainBallController2D : MonoBehaviour
             1,
             endPosition
         );
+    }
+
+    //Socket Functions
+    /// <summary>
+    /// Attempts to attach the chain ball to a socket point.
+    /// </summary>
+    public bool AttachToSocket(Transform socketPoint)
+    {
+        if (socketPoint == null)
+        {
+            Debug.LogWarning(
+                "ChainBallController2D: Socket point is null.",
+                this
+            );
+
+            return false;
+        }
+
+        if (isAttachedToSocket)
+            return false;
+
+        if (isFocusing)
+            EndFocus();
+
+        currentSocketPoint = socketPoint;
+        isAttachedToSocket = true;
+
+        bodyTypeBeforeSocket = ballBody.bodyType;
+        gravityScaleBeforeSocket = ballBody.gravityScale; 
+
+        ballBody.linearVelocity = Vector2.zero;
+        ballBody.angularVelocity = 0f;
+
+        // A kinematic body will remain locked in the socket.
+        ballBody.bodyType = RigidbodyType2D.Kinematic;
+        ballBody.gravityScale = 0f;
+
+        ballBody.position = currentSocketPoint.position;
+        ballBody.rotation = currentSocketPoint.eulerAngles.z;
+
+        swingInput = 0f;
+        hasPlayerMoveInput = false;
+
+        if (directionLine != null)
+            directionLine.enabled = false;
+
+        return true;
+    }
+
+    /// <summary>
+    /// Detaches the ball and reconnects it to the player.
+    /// </summary>
+    public bool DetachFromSocket()
+    {
+        return DetachFromSocket(Vector2.zero);
+    }
+
+    /// <summary>
+    /// Detaches the ball with an optional release velocity.
+    /// </summary>
+    public bool DetachFromSocket(Vector2 releaseVelocity)
+    {
+        if (!isAttachedToSocket)
+            return false;
+
+        isAttachedToSocket = false;
+        currentSocketPoint = null;
+
+        ballBody.bodyType = bodyTypeBeforeSocket;
+        ballBody.gravityScale = gravityScaleBeforeSocket;
+
+        ballBody.linearVelocity = releaseVelocity;
+        ballBody.angularVelocity = 0f;
+
+        distanceJoint.enabled = true;
+        ConnectJointToPlayer();
+
+        wasUsingSpinPivot = false;
+
+        return true;
+    }
+
+    private void HoldBallAtSocket()
+    {
+        if (currentSocketPoint == null)
+        {
+            DetachFromSocket();
+            return;
+        }
+
+        ballBody.MovePosition(currentSocketPoint.position);
+        ballBody.MoveRotation(currentSocketPoint.eulerAngles.z);
+
+        ballBody.linearVelocity = Vector2.zero;
+        ballBody.angularVelocity = 0f;
     }
 }
