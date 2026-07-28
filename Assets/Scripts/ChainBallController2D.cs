@@ -15,6 +15,7 @@ public class ChainBallController2D : MonoBehaviour
     private float gravityScaleBeforeSocket;
 
     public bool IsAttachedToSocket => isAttachedToSocket;
+    public bool IsFocusing => isFocusing;
 
     [Header("连接对象")]
     [SerializeField]
