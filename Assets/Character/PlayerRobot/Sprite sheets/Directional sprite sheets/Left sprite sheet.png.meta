@@ -1,0 +1,2717 @@
+fileFormatVersion: 2
+guid: 6f6c26fb06d225343955466ac22d5ff1
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6246492268682784564
+    second: Left sprite sheet_0
+  - first:
+      213: -8184441165728190065
+    second: Left sprite sheet_1
+  - first:
+      213: 8797621864440922910
+    second: Left sprite sheet_2
+  - first:
+      213: 6168866136636157885
+    second: Left sprite sheet_3
+  - first:
+      213: -5933535094339544432
+    second: Left sprite sheet_4
+  - first:
+      213: -6233490641559478682
+    second: Left sprite sheet_5
+  - first:
+      213: 6221879808697476265
+    second: Left sprite sheet_6
+  - first:
+      213: 4717048356063781342
+    second: Left sprite sheet_7
+  - first:
+      213: -1244115663268222427
+    second: Left sprite sheet_8
+  - first:
+      213: -8231907026000031399
+    second: Left sprite sheet_9
+  - first:
+      213: 4194313653580926670
+    second: Left sprite sheet_10
+  - first:
+      213: 6010398579493070716
+    second: Left sprite sheet_11
+  - first:
+      213: 5423912386867633432
+    second: Left sprite sheet_12
+  - first:
+      213: -6869640494215954304
+    second: Left sprite sheet_13
+  - first:
+      213: -8811277113912747171
+    second: Left sprite sheet_14
+  - first:
+      213: -2225269122869859040
+    second: Left sprite sheet_15
+  - first:
+      213: 6400710421289291732
+    second: Left sprite sheet_16
+  - first:
+      213: 2266874436732573712
+    second: Left sprite sheet_17
+  - first:
+      213: -657250968592337943
+    second: Left sprite sheet_18
+  - first:
+      213: 4093174790625363353
+    second: Left sprite sheet_19
+  - first:
+      213: 4824616300974806569
+    second: Left sprite sheet_20
+  - first:
+      213: -5830687369770266115
+    second: Left sprite sheet_21
+  - first:
+      213: 8486112329205591841
+    second: Left sprite sheet_22
+  - first:
+      213: 4124874842266397289
+    second: Left sprite sheet_23
+  - first:
+      213: -9148106933158223175
+    second: Left sprite sheet_24
+  - first:
+      213: 6350533927361038780
+    second: Left sprite sheet_25
+  - first:
+      213: -6120114788862285504
+    second: Left sprite sheet_26
+  - first:
+      213: -2233867490838570330
+    second: Left sprite sheet_27
+  - first:
+      213: -7451813095019730862
+    second: Left sprite sheet_28
+  - first:
+      213: 4749903170230780035
+    second: Left sprite sheet_29
+  - first:
+      213: 2606228041737191906
+    second: Left sprite sheet_30
+  - first:
+      213: -8341513740083285474
+    second: Left sprite sheet_31
+  - first:
+      213: 5216128458861881238
+    second: Left sprite sheet_32
+  - first:
+      213: -1675160186412192900
+    second: Left sprite sheet_33
+  - first:
+      213: -4158291533976378217
+    second: Left sprite sheet_34
+  - first:
+      213: -1352800821317131193
+    second: Left sprite sheet_35
+  - first:
+      213: -4023874475226218131
+    second: Left sprite sheet_36
+  - first:
+      213: 2782911472292891476
+    second: Left sprite sheet_37
+  - first:
+      213: -7777413065035845590
+    second: Left sprite sheet_38
+  - first:
+      213: -5168135554338920257
+    second: Left sprite sheet_39
+  - first:
+      213: 3280652007064125126
+    second: Left sprite sheet_40
+  - first:
+      213: 2806228534033221945
+    second: Left sprite sheet_41
+  - first:
+      213: -5041842612416887070
+    second: Left sprite sheet_42
+  - first:
+      213: -3873244533958946111
+    second: Left sprite sheet_43
+  - first:
+      213: -8130297551326145312
+    second: Left sprite sheet_44
+  - first:
+      213: 7147357144607678209
+    second: Left sprite sheet_45
+  - first:
+      213: -76585857397510924
+    second: Left sprite sheet_46
+  - first:
+      213: 6350486711689024618
+    second: Left sprite sheet_47
+  - first:
+      213: 3966923643436263836
+    second: Left sprite sheet_48
+  - first:
+      213: 3814131614536007913
+    second: Left sprite sheet_49
+  - first:
+      213: 1793691646974152007
+    second: Left sprite sheet_50
+  - first:
+      213: -3434573833196144701
+    second: Left sprite sheet_51
+  - first:
+      213: -411933911190583340
+    second: Left sprite sheet_52
+  - first:
+      213: 1107880369241176224
+    second: Left sprite sheet_53
+  - first:
+      213: -7536810330431326569
+    second: Left sprite sheet_54
+  - first:
+      213: 5569065778167432570
+    second: Left sprite sheet_55
+  - first:
+      213: 8991698543059188327
+    second: Left sprite sheet_56
+  - first:
+      213: 390515696946864803
+    second: Left sprite sheet_57
+  - first:
+      213: -1609038108250051028
+    second: Left sprite sheet_58
+  - first:
+      213: 6795745499449940567
+    second: Left sprite sheet_59
+  - first:
+      213: -717497411152859504
+    second: Left sprite sheet_60
+  - first:
+      213: 2832360621778373215
+    second: Left sprite sheet_61
+  - first:
+      213: -5061335502141536185
+    second: Left sprite sheet_62
+  - first:
+      213: -2381893481826205986
+    second: Left sprite sheet_63
+  - first:
+      213: 5258646591438501997
+    second: Left sprite sheet_64
+  - first:
+      213: -5330303982966941464
+    second: Left sprite sheet_65
+  - first:
+      213: -7370150025606628161
+    second: Left sprite sheet_66
+  - first:
+      213: -5792646920829478249
+    second: Left sprite sheet_67
+  - first:
+      213: 4037980767434908300
+    second: Left sprite sheet_68
+  - first:
+      213: -6939484485361339778
+    second: Left sprite sheet_69
+  - first:
+      213: -7101012501043656489
+    second: Left sprite sheet_70
+  - first:
+      213: -7530065288886166967
+    second: Left sprite sheet_71
+  - first:
+      213: 5911092303057348178
+    second: Left sprite sheet_72
+  - first:
+      213: -3450311849258784620
+    second: Left sprite sheet_73
+  - first:
+      213: -2101628068216788962
+    second: Left sprite sheet_74
+  - first:
+      213: 1397823926674894447
+    second: Left sprite sheet_75
+  - first:
+      213: 2493669397531445447
+    second: Left sprite sheet_76
+  - first:
+      213: 1481529243009311627
+    second: Left sprite sheet_77
+  - first:
+      213: -6237576551837308362
+    second: Left sprite sheet_78
+  - first:
+      213: -4674467776347238854
+    second: Left sprite sheet_79
+  - first:
+      213: 8544064085451719576
+    second: Left sprite sheet_80
+  - first:
+      213: 2851973300602947184
+    second: Left sprite sheet_81
+  - first:
+      213: -1628805710231854670
+    second: Left sprite sheet_82
+  - first:
+      213: -6383754438506745729
+    second: Left sprite sheet_83
+  - first:
+      213: -810267407667201464
+    second: Left sprite sheet_84
+  - first:
+      213: 6941591474727198346
+    second: Left sprite sheet_85
+  - first:
+      213: -2393401423267208459
+    second: Left sprite sheet_86
+  - first:
+      213: 9057033645741981436
+    second: Left sprite sheet_87
+  - first:
+      213: 6440327905457359207
+    second: Left sprite sheet_88
+  - first:
+      213: 6166028598550347622
+    second: Left sprite sheet_89
+  - first:
+      213: 6446862988080498587
+    second: Left sprite sheet_90
+  - first:
+      213: 6963544324352063752
+    second: Left sprite sheet_91
+  - first:
+      213: 222793206065575989
+    second: Left sprite sheet_92
+  - first:
+      213: 4717012736359370265
+    second: Left sprite sheet_93
+  - first:
+      213: -2776424590308458906
+    second: Left sprite sheet_94
+  - first:
+      213: 4065568802423834444
+    second: Left sprite sheet_95
+  - first:
+      213: -1637501486312141013
+    second: Left sprite sheet_96
+  - first:
+      213: -4634827834446823309
+    second: Left sprite sheet_97
+  - first:
+      213: 8189924743930057422
+    second: Left sprite sheet_98
+  - first:
+      213: 5284123941543105908
+    second: Left sprite sheet_99
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Left sprite sheet_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1016
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 43faf0f7f9fffa650800000000000000
+      internalID: 6246492268682784564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 1016
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f81ffaf6f160b6e80800000000000000
+      internalID: -8184441165728190065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_2
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 1016
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e130632597e671a70800000000000000
+      internalID: 8797621864440922910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_3
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 1016
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dbf622531173c9550800000000000000
+      internalID: 6168866136636157885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_4
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 1016
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09ad397d449d7ada0800000000000000
+      internalID: -5933535094339544432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_5
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 968
+        width: 17
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66e1027b9413e79a0800000000000000
+      internalID: -6233490641559478682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_6
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 968
+        width: 17
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a4a69898be885650800000000000000
+      internalID: 6221879808697476265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 968
+        width: 17
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed1a583ec72567140800000000000000
+      internalID: 4717048356063781342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_8
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 968
+        width: 17
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52ae56755630cbee0800000000000000
+      internalID: -1244115663268222427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_9
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 968
+        width: 17
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 951d933ac2462cd80800000000000000
+      internalID: -8231907026000031399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_10
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 920
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ece0346ab02353a30800000000000000
+      internalID: 4194313653580926670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_11
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 920
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c776231e9a9396350800000000000000
+      internalID: 6010398579493070716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_12
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 920
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81d1618249b954b40800000000000000
+      internalID: 5423912386867633432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_13
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 920
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0808e9f0e522aa0a0800000000000000
+      internalID: -6869640494215954304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_14
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 920
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5b93b7262e08b580800000000000000
+      internalID: -8811277113912747171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_15
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 872
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02d62b1d5814e11e0800000000000000
+      internalID: -2225269122869859040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_16
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 872
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4dfc61b3734e3d850800000000000000
+      internalID: 6400710421289291732
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_17
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 872
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 018dbdf2a4e857f10800000000000000
+      internalID: 2266874436732573712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_18
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 872
+        width: 17
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e3b5c0f9b9f0e6f0800000000000000
+      internalID: -657250968592337943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_19
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 872
+        width: 17
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9950fc619c0edc830800000000000000
+      internalID: 4093174790625363353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_20
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 824
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 926992db6fa74f240800000000000000
+      internalID: 4824616300974806569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_21
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 824
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df19c70cabc351fa0800000000000000
+      internalID: -5830687369770266115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_22
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 824
+        width: 19
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 12fac5ab33ab4c570800000000000000
+      internalID: 8486112329205591841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_23
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 776
+        width: 19
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 96aeb3480df7e3930800000000000000
+      internalID: 4124874842266397289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_24
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 776
+        width: 19
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b2e0d986356b0180800000000000000
+      internalID: -9148106933158223175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_25
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 776
+        width: 19
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb9cb6ad5f0a12850800000000000000
+      internalID: 6350533927361038780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_26
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 728
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 049af39760cf01ba0800000000000000
+      internalID: -6120114788862285504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_27
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 728
+        width: 21
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6aa16454a55bff0e0800000000000000
+      internalID: -2233867490838570330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_28
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 728
+        width: 20
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 258aeb2b877d59890800000000000000
+      internalID: -7451813095019730862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_29
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 728
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3808b1b64cb0be140800000000000000
+      internalID: 4749903170230780035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_30
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 728
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e14867789e2b2420800000000000000
+      internalID: 2606228041737191906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_31
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 680
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e12bb49d27dfc3c80800000000000000
+      internalID: -8341513740083285474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_32
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 680
+        width: 19
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 697a4457239636840800000000000000
+      internalID: 5216128458861881238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_33
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 680
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c7b26039fa2a0c8e0800000000000000
+      internalID: -1675160186412192900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_34
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 680
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 794e2d4a1e7ca46c0800000000000000
+      internalID: -4158291533976378217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_35
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 680
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 744298902d2e93de0800000000000000
+      internalID: -1352800821317131193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_36
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 632
+        width: 18
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d614163fb735828c0800000000000000
+      internalID: -4023874475226218131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_37
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 629
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 45b80635d33ee9620800000000000000
+      internalID: 2782911472292891476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_38
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 631
+        width: 18
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a207e0b1604111490800000000000000
+      internalID: -7777413065035845590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_39
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 632
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb8ef8468181748b0800000000000000
+      internalID: -5168135554338920257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_40
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 633
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6cebab86e97378d20800000000000000
+      internalID: 3280652007064125126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_41
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 584
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9398d91dbf9b1f620800000000000000
+      internalID: 2806228534033221945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_42
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 584
+        width: 18
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e6c6795bd6c70ab0800000000000000
+      internalID: -5041842612416887070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_43
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 584
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1c257212e987f3ac0800000000000000
+      internalID: -3873244533958946111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_44
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 584
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e41af604716b2f80800000000000000
+      internalID: -8130297551326145312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_45
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 536
+        width: 27
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10fd0376473803360800000000000000
+      internalID: 7147357144607678209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_46
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 536
+        width: 31
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fca0078199efeef0800000000000000
+      internalID: -76585857397510924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_47
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 551
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6410199406712850800000000000000
+      internalID: 6350486711689024618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_48
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 536
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c99ed1a39085d0730800000000000000
+      internalID: 3966923643436263836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_49
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 536
+        width: 33
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9e0810bce748ee430800000000000000
+      internalID: 3814131614536007913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_50
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 488
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 74dca7eac0974e810800000000000000
+      internalID: 1793691646974152007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_51
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 488
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3c7fd7dbb41f550d0800000000000000
+      internalID: -3434573833196144701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_52
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 488
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d74c805a44884af0800000000000000
+      internalID: -411933911190583340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_53
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 488
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a8bf36735bff5f00800000000000000
+      internalID: 1107880369241176224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_54
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 488
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 796752bafeed76790800000000000000
+      internalID: -7536810330431326569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_55
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 440
+        width: 17
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a75447ea1db494d40800000000000000
+      internalID: 5569065778167432570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_56
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 440
+        width: 17
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76ab0725f2ee8cc70800000000000000
+      internalID: 8991698543059188327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_57
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 440
+        width: 17
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a26bb315f36b6500800000000000000
+      internalID: 390515696946864803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_58
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 440
+        width: 17
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2e60b79d5c8ba9e0800000000000000
+      internalID: -1609038108250051028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_59
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 440
+        width: 17
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75a5caeb6865f4e50800000000000000
+      internalID: 6795745499449940567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_60
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 392
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09ea8f0f7efea06f0800000000000000
+      internalID: -717497411152859504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_61
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 392
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5a87e0aaf09e4720800000000000000
+      internalID: 2832360621778373215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_62
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 392
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 748c7c94d2682c9b0800000000000000
+      internalID: -5061335502141536185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_63
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 392
+        width: 17
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ede3ee28f70d1fed0800000000000000
+      internalID: -2381893481826205986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_64
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 392
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d68b202a6377af840800000000000000
+      internalID: 5258646591438501997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_65
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 344
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e8d766c4c4f606b0800000000000000
+      internalID: -5330303982966941464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_66
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 344
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fbc7166b997f7b990800000000000000
+      internalID: -7370150025606628161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_67
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 344
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79ad2b6f0526c9fa0800000000000000
+      internalID: -5792646920829478249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_68
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 344
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8221d42d1ac90830800000000000000
+      internalID: 4037980767434908300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_69
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 344
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e72f3b5a0aff1bf90800000000000000
+      internalID: -6939484485361339778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_70
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 296
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d84fa9c0c2247d90800000000000000
+      internalID: -7101012501043656489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_71
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 296
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94ad0780485df7790800000000000000
+      internalID: -7530065288886166967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_72
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 296
+        width: 19
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 256674e912b680250800000000000000
+      internalID: 5911092303057348178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_73
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 248
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 498eb9457a70e10d0800000000000000
+      internalID: -3450311849258784620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_74
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 248
+        width: 19
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e18a2f7286485d2e0800000000000000
+      internalID: -2101628068216788962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_75
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 248
+        width: 19
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6eafff8471166310800000000000000
+      internalID: 1397823926674894447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_76
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 200
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c8cf13ea1b4b9220800000000000000
+      internalID: 2493669397531445447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_77
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 200
+        width: 21
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b836ced3ff27f8410800000000000000
+      internalID: 1481529243009311627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_78
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 200
+        width: 20
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 63a6e689c2daf69a0800000000000000
+      internalID: -6237576551837308362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_79
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 200
+        width: 25
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a3e00d4e254f02fb0800000000000000
+      internalID: -4674467776347238854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_80
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 200
+        width: 18
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 893c58f640d929670800000000000000
+      internalID: 8544064085451719576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_81
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 152
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07646534b9e349720800000000000000
+      internalID: 2851973300602947184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_82
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 152
+        width: 19
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b1a08916d15569e0800000000000000
+      internalID: -1628805710231854670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_83
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 152
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f707b7729295867a0800000000000000
+      internalID: -6383754438506745729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_84
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 152
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 84a7be0f51a51c4f0800000000000000
+      internalID: -810267407667201464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_85
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 152
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8e9efa0bac755060800000000000000
+      internalID: 6941591474727198346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_86
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 104
+        width: 18
+        height: 25
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f26e39161ee8ced0800000000000000
+      internalID: -2393401423267208459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_87
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 99
+        width: 18
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfe36355d1c01bd70800000000000000
+      internalID: 9057033645741981436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_88
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 102
+        width: 18
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76942d19b14a06950800000000000000
+      internalID: 6440327905457359207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_89
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 102
+        width: 17
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66f3e736752229550800000000000000
+      internalID: 6166028598550347622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_90
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 103
+        width: 17
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b97c6201bbbd77950800000000000000
+      internalID: 6446862988080498587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_91
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 56
+        width: 18
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 80931b62baa73a060800000000000000
+      internalID: 6963544324352063752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_92
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 56
+        width: 18
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 538b8e19d35871300800000000000000
+      internalID: 222793206065575989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_93
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 56
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 91e81b78712367140800000000000000
+      internalID: 4717012736359370265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_94
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 56
+        width: 17
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 66e31059b882879d0800000000000000
+      internalID: -2776424590308458906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_95
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 8
+        width: 27
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c470266194dcb6830800000000000000
+      internalID: 4065568802423834444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_96
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 8
+        width: 31
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2fc035f21d6649e0800000000000000
+      internalID: -1637501486312141013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_97
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 21
+        width: 12
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37044b414a8cdafb0800000000000000
+      internalID: -4634827834446823309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_98
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 8
+        width: 25
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec2122b992578a170800000000000000
+      internalID: 8189924743930057422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Left sprite sheet_99
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 8
+        width: 33
+        height: 29
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47550d47abaf45940800000000000000
+      internalID: 5284123941543105908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Left sprite sheet_0: 6246492268682784564
+      Left sprite sheet_1: -8184441165728190065
+      Left sprite sheet_10: 4194313653580926670
+      Left sprite sheet_11: 6010398579493070716
+      Left sprite sheet_12: 5423912386867633432
+      Left sprite sheet_13: -6869640494215954304
+      Left sprite sheet_14: -8811277113912747171
+      Left sprite sheet_15: -2225269122869859040
+      Left sprite sheet_16: 6400710421289291732
+      Left sprite sheet_17: 2266874436732573712
+      Left sprite sheet_18: -657250968592337943
+      Left sprite sheet_19: 4093174790625363353
+      Left sprite sheet_2: 8797621864440922910
+      Left sprite sheet_20: 4824616300974806569
+      Left sprite sheet_21: -5830687369770266115
+      Left sprite sheet_22: 8486112329205591841
+      Left sprite sheet_23: 4124874842266397289
+      Left sprite sheet_24: -9148106933158223175
+      Left sprite sheet_25: 6350533927361038780
+      Left sprite sheet_26: -6120114788862285504
+      Left sprite sheet_27: -2233867490838570330
+      Left sprite sheet_28: -7451813095019730862
+      Left sprite sheet_29: 4749903170230780035
+      Left sprite sheet_3: 6168866136636157885
+      Left sprite sheet_30: 2606228041737191906
+      Left sprite sheet_31: -8341513740083285474
+      Left sprite sheet_32: 5216128458861881238
+      Left sprite sheet_33: -1675160186412192900
+      Left sprite sheet_34: -4158291533976378217
+      Left sprite sheet_35: -1352800821317131193
+      Left sprite sheet_36: -4023874475226218131
+      Left sprite sheet_37: 2782911472292891476
+      Left sprite sheet_38: -7777413065035845590
+      Left sprite sheet_39: -5168135554338920257
+      Left sprite sheet_4: -5933535094339544432
+      Left sprite sheet_40: 3280652007064125126
+      Left sprite sheet_41: 2806228534033221945
+      Left sprite sheet_42: -5041842612416887070
+      Left sprite sheet_43: -3873244533958946111
+      Left sprite sheet_44: -8130297551326145312
+      Left sprite sheet_45: 7147357144607678209
+      Left sprite sheet_46: -76585857397510924
+      Left sprite sheet_47: 6350486711689024618
+      Left sprite sheet_48: 3966923643436263836
+      Left sprite sheet_49: 3814131614536007913
+      Left sprite sheet_5: -6233490641559478682
+      Left sprite sheet_50: 1793691646974152007
+      Left sprite sheet_51: -3434573833196144701
+      Left sprite sheet_52: -411933911190583340
+      Left sprite sheet_53: 1107880369241176224
+      Left sprite sheet_54: -7536810330431326569
+      Left sprite sheet_55: 5569065778167432570
+      Left sprite sheet_56: 8991698543059188327
+      Left sprite sheet_57: 390515696946864803
+      Left sprite sheet_58: -1609038108250051028
+      Left sprite sheet_59: 6795745499449940567
+      Left sprite sheet_6: 6221879808697476265
+      Left sprite sheet_60: -717497411152859504
+      Left sprite sheet_61: 2832360621778373215
+      Left sprite sheet_62: -5061335502141536185
+      Left sprite sheet_63: -2381893481826205986
+      Left sprite sheet_64: 5258646591438501997
+      Left sprite sheet_65: -5330303982966941464
+      Left sprite sheet_66: -7370150025606628161
+      Left sprite sheet_67: -5792646920829478249
+      Left sprite sheet_68: 4037980767434908300
+      Left sprite sheet_69: -6939484485361339778
+      Left sprite sheet_7: 4717048356063781342
+      Left sprite sheet_70: -7101012501043656489
+      Left sprite sheet_71: -7530065288886166967
+      Left sprite sheet_72: 5911092303057348178
+      Left sprite sheet_73: -3450311849258784620
+      Left sprite sheet_74: -2101628068216788962
+      Left sprite sheet_75: 1397823926674894447
+      Left sprite sheet_76: 2493669397531445447
+      Left sprite sheet_77: 1481529243009311627
+      Left sprite sheet_78: -6237576551837308362
+      Left sprite sheet_79: -4674467776347238854
+      Left sprite sheet_8: -1244115663268222427
+      Left sprite sheet_80: 8544064085451719576
+      Left sprite sheet_81: 2851973300602947184
+      Left sprite sheet_82: -1628805710231854670
+      Left sprite sheet_83: -6383754438506745729
+      Left sprite sheet_84: -810267407667201464
+      Left sprite sheet_85: 6941591474727198346
+      Left sprite sheet_86: -2393401423267208459
+      Left sprite sheet_87: 9057033645741981436
+      Left sprite sheet_88: 6440327905457359207
+      Left sprite sheet_89: 6166028598550347622
+      Left sprite sheet_9: -8231907026000031399
+      Left sprite sheet_90: 6446862988080498587
+      Left sprite sheet_91: 6963544324352063752
+      Left sprite sheet_92: 222793206065575989
+      Left sprite sheet_93: 4717012736359370265
+      Left sprite sheet_94: -2776424590308458906
+      Left sprite sheet_95: 4065568802423834444
+      Left sprite sheet_96: -1637501486312141013
+      Left sprite sheet_97: -4634827834446823309
+      Left sprite sheet_98: 8189924743930057422
+      Left sprite sheet_99: 5284123941543105908
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
