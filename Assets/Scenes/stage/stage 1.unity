@@ -185,7 +185,7 @@ PrefabInstance:
     - target: {fileID: 6856363836757471665, guid: 6e146d7672d461b43981bba265d8ae60,
         type: 3}
       propertyPath: m_Distance
-      value: 17.228172
+      value: 30.020267
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
