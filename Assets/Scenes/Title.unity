@@ -434,7 +434,7 @@ LineRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_MaskInteraction: 0
   m_Positions:
   - {x: 0, y: 0, z: 0}
@@ -446,8 +446,8 @@ LineRenderer:
       serializedVersion: 2
       m_Curve:
       - serializedVersion: 3
-        time: 0.50036085
-        value: 0.5
+        time: 1
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
@@ -484,7 +484,7 @@ LineRenderer:
       atime6: 0
       atime7: 0
       m_Mode: 0
-      m_ColorSpace: -1
+      m_ColorSpace: 0
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
@@ -644,7 +644,7 @@ MonoBehaviour:
   maximumBallSpeed: 300
   directionLine: {fileID: 579432260}
   minimumDirectionLineLength: 0.5
-  maximumDirectionLineLength: 3
+  maximumDirectionLineLength: 15
   minimumDirectionSpeed: 0.2
   focusTimeScale: 0.2
 --- !u!232 &991050114
@@ -665,7 +665,7 @@ DistanceJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.20743942, y: -0.10063076}
   m_AutoConfigureDistance: 1
-  m_Distance: 50.21947
+  m_Distance: 9.276829
   m_MaxDistanceOnly: 0
 --- !u!50 &991050115
 Rigidbody2D:
@@ -764,7 +764,7 @@ Transform:
   m_GameObject: {fileID: 991050110}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -50, y: -1.2, z: 0}
+  m_LocalPosition: {x: -8.799999, y: -2.3200002, z: 0}
   m_LocalScale: {x: 3, y: 3, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -833,7 +833,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 50
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1083,7 +1083,7 @@ Transform:
   m_GameObject: {fileID: 1218065164}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -46.7, y: 0.7, z: 0}
+  m_LocalPosition: {x: -5.5, y: -0.42, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

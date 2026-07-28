@@ -24,7 +24,7 @@ public class ChainBallController2D : MonoBehaviour
     private float swingForce = 35.0f;
 
     [SerializeField]
-    private float maximumBallSpeed = 300.0f;
+    private float maximumBallSpeed = 30.0f;
 
     private Rigidbody2D ballBody;
     private DistanceJoint2D distanceJoint;
@@ -51,7 +51,7 @@ public class ChainBallController2D : MonoBehaviour
     private float minimumDirectionLineLength = 0.5f;
 
     [SerializeField]
-    private float maximumDirectionLineLength = 3.0f;
+    private float maximumDirectionLineLength = 30.0f;
 
     [Header("方向显示最低速度")]
     [SerializeField]
@@ -646,6 +646,7 @@ public class ChainBallController2D : MonoBehaviour
 
         directionLine.enabled = true;
 
+        
         directionLine.SetPosition(
             0,
             startPosition
