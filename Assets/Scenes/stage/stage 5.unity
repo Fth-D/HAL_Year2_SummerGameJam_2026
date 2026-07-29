@@ -18936,6 +18936,12 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab01382b0c9bfdf4db74b241433b9696, type: 3}
+--- !u!4 &1983939479 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4097095705272015042, guid: ab01382b0c9bfdf4db74b241433b9696,
+    type: 3}
+  m_PrefabInstance: {fileID: 1983939478}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2118793572
 GameObject:
   m_ObjectHideFlags: 0
@@ -18985,7 +18991,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::CameraFollow
   onlyX: 1
   onlyY: 0
-  player: {fileID: 0}
+  player: {fileID: 1983939479}
   smoothSpeed: 5
   minX: 0
   maxX: 0

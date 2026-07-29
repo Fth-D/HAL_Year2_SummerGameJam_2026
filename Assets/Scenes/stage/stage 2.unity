@@ -119,6 +119,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!4 &22730991 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4097095705272015042, guid: ab01382b0c9bfdf4db74b241433b9696,
+    type: 3}
+  m_PrefabInstance: {fileID: 2069717287}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &174600859 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 467321396402372095, guid: 8f0f4ab13b1087f458dbc47344efd5d8,
@@ -5355,7 +5361,7 @@ TilemapRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_MaskInteraction: 0
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
@@ -86740,7 +86746,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: '::'
   onlyX: 0
   onlyY: 1
-  player: {fileID: 0}
+  player: {fileID: 22730991}
   smoothSpeed: 5
   minX: 0
   maxX: 0

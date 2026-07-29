@@ -837,7 +837,7 @@ DistanceJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.20743942, y: -0.10063076}
   m_AutoConfigureDistance: 1
-  m_Distance: 14.3278265
+  m_Distance: 4.0444407
   m_MaxDistanceOnly: 0
 --- !u!114 &8007632003800740402
 MonoBehaviour:
@@ -857,7 +857,7 @@ MonoBehaviour:
   playerBody: {fileID: 168099462464290642}
   handPoint: {fileID: 8377522605982242265}
   chainLine: {fileID: 4444172606837611420}
-  chainLength: 2
+  chainLength: 4
   swingForce: 10
   playerSwingForce: 35
   maximumBallSpeed: 300
