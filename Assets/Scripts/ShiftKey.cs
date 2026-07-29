@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 
-public class PressQKey : MonoBehaviour
+public class PressShiftKey : MonoBehaviour
 {
     private Animator animator;
 
@@ -17,7 +17,7 @@ public class PressQKey : MonoBehaviour
 
         bool isPressed =
             keyboard != null &&
-            keyboard.qKey.isPressed;
+            keyboard.leftShiftKey.isPressed;
 
         animator.SetBool("IsPress", isPressed);
     }

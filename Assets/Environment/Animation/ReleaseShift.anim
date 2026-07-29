@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PressQ
+  m_Name: ReleaseShift
   serializedVersion: 8
   m_Legacy: 0
   m_Compressed: 0
@@ -21,7 +21,7 @@ AnimationClip:
   - serializedVersion: 2
     curve:
     - time: 0
-      value: {fileID: -7887570810912317285, guid: 6abb8f3d9ad30f14283bb0d859c29ffc,
+      value: {fileID: 4866298172408848491, guid: 2eece101949b1b144a6c84b715b59ba6,
         type: 3}
     attribute: m_Sprite
     path: 
@@ -46,7 +46,7 @@ AnimationClip:
       isSerializeReferenceCurve: 0
       metaData: 0
     pptrCurveMapping:
-    - {fileID: -7887570810912317285, guid: 6abb8f3d9ad30f14283bb0d859c29ffc, type: 3}
+    - {fileID: 4866298172408848491, guid: 2eece101949b1b144a6c84b715b59ba6, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
