@@ -58,6 +58,9 @@ public class PlayerDirectionLine : MonoBehaviour
 
         directionLine.startWidth = 0.15f;
         directionLine.endWidth = 0.15f;
+        
+        directionLine.startColor = Color.green;
+        directionLine.endColor = Color.green;
 
         directionLine.sortingOrder = 100;
 
