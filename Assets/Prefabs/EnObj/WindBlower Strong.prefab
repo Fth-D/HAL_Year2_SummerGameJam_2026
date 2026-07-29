@@ -255,7 +255,7 @@ MonoBehaviour:
   startActive: 1
   targetLayers:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 192
   affectTriggerColliders: 0
 --- !u!1 &4149132172375892590
 GameObject:
