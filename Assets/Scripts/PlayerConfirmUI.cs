@@ -72,7 +72,7 @@ public class PlayerConfirmUI : MonoBehaviour
                 startText.enabled = true;
 
                 startText.text =
-                    $"start?\n{remainingTime:F1}";
+                    $"starting in {remainingTime:F1}";
             }
 
             // 时间到了，开始游戏
@@ -104,7 +104,7 @@ public class PlayerConfirmUI : MonoBehaviour
                 quitText.enabled = true;
 
                 quitText.text =
-                    $"quit?\n{remainingTime:F1}";
+                    $"Leaving in {remainingTime:F1}";
             }
 
             // 时间到了，退出游戏
