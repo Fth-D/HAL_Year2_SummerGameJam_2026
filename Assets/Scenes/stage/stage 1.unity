@@ -61404,6 +61404,11 @@ PrefabInstance:
       propertyPath: ballSpriteRenderer
       value: 
       objectReference: {fileID: 398437900}
+    - target: {fileID: 8196737932468737964, guid: ab01382b0c9bfdf4db74b241433b9696,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
