@@ -26,7 +26,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.7592392, y: 2.5581477, z: 0}
-  m_LocalScale: {x: 0.38, y: 0.38, z: 0.38}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4097095705272015042}
@@ -677,7 +677,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -6968742210135179512, guid: 9e1e590b9ced7f54c875837c494f08dc,
     type: 3}
@@ -837,7 +837,7 @@ DistanceJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.20743942, y: -0.10063076}
   m_AutoConfigureDistance: 1
-  m_Distance: 24.553408
+  m_Distance: 14.3278265
   m_MaxDistanceOnly: 0
 --- !u!114 &8007632003800740402
 MonoBehaviour:
@@ -1123,7 +1123,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -6968742210135179512, guid: 9e1e590b9ced7f54c875837c494f08dc,
     type: 3}
@@ -1216,7 +1216,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -6968742210135179512, guid: 9e1e590b9ced7f54c875837c494f08dc,
     type: 3}
@@ -1309,7 +1309,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -6968742210135179512, guid: 9e1e590b9ced7f54c875837c494f08dc,
     type: 3}
@@ -1402,7 +1402,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: 6999939906866651835, guid: 9e1e590b9ced7f54c875837c494f08dc,
     type: 3}
@@ -1701,7 +1701,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_MaskInteraction: 0
   m_Sprite: {fileID: -409158306766479926, guid: 9e1e590b9ced7f54c875837c494f08dc,
     type: 3}
