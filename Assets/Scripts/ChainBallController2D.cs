@@ -257,7 +257,7 @@ public class ChainBallController2D : MonoBehaviour
         }
 
         // Q/E控制链球旋转
-        if (keyboard.qKey.isPressed)
+        if (keyboard.eKey.isPressed)
         {
             if (isAttachedToSocket)
             {
@@ -266,7 +266,7 @@ public class ChainBallController2D : MonoBehaviour
             else swingInput -= 5.0f;
         }
 
-        if (keyboard.eKey.isPressed)
+        if (keyboard.qKey.isPressed)
         {
             if (isAttachedToSocket)
             {

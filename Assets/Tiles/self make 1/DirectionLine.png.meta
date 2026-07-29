@@ -1,0 +1,1339 @@
+fileFormatVersion: 2
+guid: c36e062f34c639b4293eb412b22f8979
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6496569652958648691
+    second: DirectionLine_0
+  - first:
+      213: -5956563508890939556
+    second: DirectionLine_1
+  - first:
+      213: -7385217547933174369
+    second: DirectionLine_2
+  - first:
+      213: -7263818611129665390
+    second: DirectionLine_3
+  - first:
+      213: 7087196561289863457
+    second: DirectionLine_4
+  - first:
+      213: 7086176249675674602
+    second: DirectionLine_5
+  - first:
+      213: -1798159787439628494
+    second: DirectionLine_6
+  - first:
+      213: -285670410538233177
+    second: DirectionLine_7
+  - first:
+      213: 6435578154087045498
+    second: DirectionLine_8
+  - first:
+      213: 661244726123803814
+    second: DirectionLine_9
+  - first:
+      213: -4380028373607719007
+    second: DirectionLine_10
+  - first:
+      213: 5227767463393347157
+    second: DirectionLine_11
+  - first:
+      213: 1126865411163178611
+    second: DirectionLine_12
+  - first:
+      213: 5202916906567880926
+    second: DirectionLine_13
+  - first:
+      213: -7689884022907248712
+    second: DirectionLine_14
+  - first:
+      213: 6196502605063421171
+    second: DirectionLine_15
+  - first:
+      213: 5589732217391580664
+    second: DirectionLine_16
+  - first:
+      213: 2983301172322219517
+    second: DirectionLine_17
+  - first:
+      213: 9056773478134373929
+    second: DirectionLine_18
+  - first:
+      213: 6396446775085160747
+    second: DirectionLine_19
+  - first:
+      213: -565406549375444794
+    second: DirectionLine_20
+  - first:
+      213: -7364798291227505298
+    second: DirectionLine_21
+  - first:
+      213: 4044275537415161849
+    second: DirectionLine_22
+  - first:
+      213: -7829299524459542560
+    second: DirectionLine_23
+  - first:
+      213: 2694159285651113977
+    second: DirectionLine_24
+  - first:
+      213: -8171025564191292412
+    second: DirectionLine_25
+  - first:
+      213: -350863852493548438
+    second: DirectionLine_26
+  - first:
+      213: -6512374528644242891
+    second: DirectionLine_27
+  - first:
+      213: 4366138785959862415
+    second: DirectionLine_28
+  - first:
+      213: -7725058530161228891
+    second: DirectionLine_29
+  - first:
+      213: -2942247000700116441
+    second: DirectionLine_30
+  - first:
+      213: -549329855134515364
+    second: DirectionLine_31
+  - first:
+      213: 2302810045287477350
+    second: DirectionLine_32
+  - first:
+      213: 4800980215126132702
+    second: DirectionLine_33
+  - first:
+      213: 4260956122086719522
+    second: DirectionLine_34
+  - first:
+      213: 832295458327047786
+    second: DirectionLine_35
+  - first:
+      213: 3769320918821879747
+    second: DirectionLine_36
+  - first:
+      213: -4929036054314575597
+    second: DirectionLine_37
+  - first:
+      213: -7793684244839378365
+    second: DirectionLine_38
+  - first:
+      213: -9094203724820674634
+    second: DirectionLine_39
+  - first:
+      213: 6601479444445422815
+    second: DirectionLine_40
+  - first:
+      213: 2438011613171065966
+    second: DirectionLine_41
+  - first:
+      213: 2838941831652926141
+    second: DirectionLine_42
+  - first:
+      213: 7587828278078685656
+    second: DirectionLine_43
+  - first:
+      213: -8125748115129890411
+    second: DirectionLine_44
+  - first:
+      213: 959541356144227219
+    second: DirectionLine_45
+  - first:
+      213: -1237423042951277704
+    second: DirectionLine_46
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 0
+    wrapV: 0
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: DirectionLine_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1536
+        height: 598
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 379de27dda3782a50800000000000000
+      internalID: 6496569652958648691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_1
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 595
+        width: 318
+        height: 429
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5f40824c09065da0800000000000000
+      internalID: -5956563508890939556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_2
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 991
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f95367ac4cf628990800000000000000
+      internalID: -7385217547933174369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_3
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 983
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 298beb2657bb13b90800000000000000
+      internalID: -7263818611129665390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_4
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 974
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1216d0119b7ca5260800000000000000
+      internalID: 7087196561289863457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_5
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 1007
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae37ab141c7275260800000000000000
+      internalID: 7086176249675674602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_6
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 999
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23fd44c4337ab07e0800000000000000
+      internalID: -1798159787439628494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_7
+      rect:
+        serializedVersion: 2
+        x: 344
+        y: 594
+        width: 686
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a257017648190cf0800000000000000
+      internalID: -285670410538233177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_8
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 599
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a795f96eb34cf4950800000000000000
+      internalID: 6435578154087045498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_9
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 599
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a4b53233963d2900800000000000000
+      internalID: 661244726123803814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_10
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 592
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1afdafc86630733c0800000000000000
+      internalID: -4380028373607719007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_11
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 594
+        width: 485
+        height: 430
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 556c7ef5fc2cc8840800000000000000
+      internalID: 5227767463393347157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_12
+      rect:
+        serializedVersion: 2
+        x: 1136
+        y: 591
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3764e0efe1e63af00800000000000000
+      internalID: 1126865411163178611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_13
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 430
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed05adb3c59743840800000000000000
+      internalID: 5202916906567880926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_14
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 431
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bf59a2593b084590800000000000000
+      internalID: -7689884022907248712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_15
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 426
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fc7690f9466ef550800000000000000
+      internalID: 6196502605063421171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_16
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 427
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f58e2706d7b29d40800000000000000
+      internalID: 5589732217391580664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_17
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 418
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df5b54a2c90d66920800000000000000
+      internalID: 2983301172322219517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_18
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 406
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92ed0675e7f10bd70800000000000000
+      internalID: 9056773478134373929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_19
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 410
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b29d4adb37eb4c850800000000000000
+      internalID: 6396446775085160747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_20
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 400
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6c81cce2db54728f0800000000000000
+      internalID: -565406549375444794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_21
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 186
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6d0bf879fafac990800000000000000
+      internalID: -7364798291227505298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_22
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 153
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f7ce6d7c27202830800000000000000
+      internalID: 4044275537415161849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_23
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 147
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e7447c509db85390800000000000000
+      internalID: -7829299524459542560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_24
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 142
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f70e859893936520800000000000000
+      internalID: 2694159285651113977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_25
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 100
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4040eb39a8faa9e80800000000000000
+      internalID: -8171025564191292412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_26
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 104
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a64d8936f2b712bf0800000000000000
+      internalID: -350863852493548438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_27
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 87
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 532abd7ced56f95a0800000000000000
+      internalID: -6512374528644242891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_28
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 95
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f806131d714a79c30800000000000000
+      internalID: 4366138785959862415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_29
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 95
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a383a822341bc490800000000000000
+      internalID: -7725058530161228891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_30
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 70
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 722afc901f90b27d0800000000000000
+      internalID: -2942247000700116441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_31
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 62
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5fb03048636068f0800000000000000
+      internalID: -549329855134515364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_32
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 54
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 660bf8e098935ff10800000000000000
+      internalID: 2302810045287477350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_33
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 39
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed78548a11280a240800000000000000
+      internalID: 4800980215126132702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_34
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 46
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 220418c7405f12b30800000000000000
+      internalID: 4260956122086719522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_35
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 38
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a6e21c54f48ec8b00800000000000000
+      internalID: 832295458327047786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_36
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 35
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cfb3daa7615f4430800000000000000
+      internalID: 3769320918821879747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_37
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 30
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3199c71e2db889bb0800000000000000
+      internalID: -4929036054314575597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_38
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 23
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3425ac6d87547d390800000000000000
+      internalID: -7793684244839378365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_39
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 23
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b7870b35e5eac180800000000000000
+      internalID: -9094203724820674634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_40
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 23
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fd4663e149a2d9b50800000000000000
+      internalID: 6601479444445422815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_41
+      rect:
+        serializedVersion: 2
+        x: 81
+        y: 11
+        width: 8
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e64a65125ae85d120800000000000000
+      internalID: 2438011613171065966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_42
+      rect:
+        serializedVersion: 2
+        x: 994
+        y: 10
+        width: 7
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db26ba5fd82f56720800000000000000
+      internalID: 2838941831652926141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_43
+      rect:
+        serializedVersion: 2
+        x: 1041
+        y: 0
+        width: 6
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d14b8bed916d4960800000000000000
+      internalID: 7587828278078685656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_44
+      rect:
+        serializedVersion: 2
+        x: 1042
+        y: 15
+        width: 6
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 599026f242b8b3f80800000000000000
+      internalID: -8125748115129890411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_45
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 7
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 393f54097c9f05d00800000000000000
+      internalID: 959541356144227219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DirectionLine_46
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 0
+        width: 7
+        height: 5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87391007c4ac3dee0800000000000000
+      internalID: -1237423042951277704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      DirectionLine_0: 6496569652958648691
+      DirectionLine_1: -5956563508890939556
+      DirectionLine_10: -4380028373607719007
+      DirectionLine_11: 5227767463393347157
+      DirectionLine_12: 1126865411163178611
+      DirectionLine_13: 5202916906567880926
+      DirectionLine_14: -7689884022907248712
+      DirectionLine_15: 6196502605063421171
+      DirectionLine_16: 5589732217391580664
+      DirectionLine_17: 2983301172322219517
+      DirectionLine_18: 9056773478134373929
+      DirectionLine_19: 6396446775085160747
+      DirectionLine_2: -7385217547933174369
+      DirectionLine_20: -565406549375444794
+      DirectionLine_21: -7364798291227505298
+      DirectionLine_22: 4044275537415161849
+      DirectionLine_23: -7829299524459542560
+      DirectionLine_24: 2694159285651113977
+      DirectionLine_25: -8171025564191292412
+      DirectionLine_26: -350863852493548438
+      DirectionLine_27: -6512374528644242891
+      DirectionLine_28: 4366138785959862415
+      DirectionLine_29: -7725058530161228891
+      DirectionLine_3: -7263818611129665390
+      DirectionLine_30: -2942247000700116441
+      DirectionLine_31: -549329855134515364
+      DirectionLine_32: 2302810045287477350
+      DirectionLine_33: 4800980215126132702
+      DirectionLine_34: 4260956122086719522
+      DirectionLine_35: 832295458327047786
+      DirectionLine_36: 3769320918821879747
+      DirectionLine_37: -4929036054314575597
+      DirectionLine_38: -7793684244839378365
+      DirectionLine_39: -9094203724820674634
+      DirectionLine_4: 7087196561289863457
+      DirectionLine_40: 6601479444445422815
+      DirectionLine_41: 2438011613171065966
+      DirectionLine_42: 2838941831652926141
+      DirectionLine_43: 7587828278078685656
+      DirectionLine_44: -8125748115129890411
+      DirectionLine_45: 959541356144227219
+      DirectionLine_46: -1237423042951277704
+      DirectionLine_5: 7086176249675674602
+      DirectionLine_6: -1798159787439628494
+      DirectionLine_7: -285670410538233177
+      DirectionLine_8: 6435578154087045498
+      DirectionLine_9: 661244726123803814
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
