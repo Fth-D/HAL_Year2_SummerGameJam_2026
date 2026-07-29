@@ -1644,11 +1644,11 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
-  m_Resource: {fileID: 0}
+  m_Resource: {fileID: 8300000, guid: 9df32fda9ff778544b8ed4bf54ea2005, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.8
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
@@ -1752,7 +1752,7 @@ MonoBehaviour:
   teleport: {fileID: 8300000, guid: c005dbf30f3358744a62fc723cbabd93, type: 3}
   player_hit_laser: {fileID: 8300000, guid: 7924c930e3e2ab249acf4d49e36f4e79, type: 3}
   socket: {fileID: 8300000, guid: 7dc828dda212acf4690c44d6fddff77e, type: 3}
-  volume: 1
+  volume: 0.9
 --- !u!1 &9028023288334480875
 GameObject:
   m_ObjectHideFlags: 0
