@@ -47,13 +47,11 @@ public class Player : MonoBehaviour
         {
             playerSound?.PlayPlayerHitWall();
         }
-
-        if (collision.gameObject.CompareTag("Teleport"))
+        else if (collision.gameObject.CompareTag("Teleport"))
         {
             playerSound?.PlayTeleport();
         }
-
-        if (collision.gameObject.CompareTag("Laser"))
+        else if (collision.gameObject.CompareTag("Laser"))
         {
             playerSound?.PlayPlayerHitLaser();
         }
