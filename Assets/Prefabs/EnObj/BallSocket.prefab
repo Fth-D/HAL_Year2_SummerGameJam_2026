@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7356395190958510956}
   - component: {fileID: 3203148799377535464}
   - component: {fileID: 8216275026851581317}
+  - component: {fileID: 5640730763004055810}
   m_Layer: 0
   m_Name: BallSocket
   m_TagString: Untagged
@@ -29,7 +30,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.84, y: 1.29, z: 0}
-  m_LocalScale: {x: 2.4938, y: 2.4938, z: 2.4938}
+  m_LocalScale: {x: 4, y: 4, z: 2.4938}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -83,9 +84,9 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 1
   m_MaskInteraction: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b,
+  m_Sprite: {fileID: 3643250595964154592, guid: 948fe5d1f1a60d14494f47a2206c77c5,
     type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -152,3 +153,20 @@ MonoBehaviour:
     m_Bits: 64
   releaseVelocity: {x: 0, y: 0}
   requireExitBeforeReattaching: 1
+--- !u!114 &5640730763004055810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8530524604348724712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 633e6ded603d7b342ad8cf544634a523, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: '::'
+  socketSpriteRenderer: {fileID: 7356395190958510956}
+  emptySprite: {fileID: 3643250595964154592, guid: 948fe5d1f1a60d14494f47a2206c77c5,
+    type: 3}
+  attachedSprite: {fileID: 613440466488921455, guid: 43ba966009e0a5644bf2239f79ac6a25,
+    type: 3}
