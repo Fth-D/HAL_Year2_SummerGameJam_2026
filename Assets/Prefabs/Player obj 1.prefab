@@ -851,6 +851,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 12c0a873cbc7129479b0034a521effc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ChainBallController2D
+  playerSound: {fileID: 5606928023338511118}
+  degreesPerSpinSound: 360
   isAttachedToSocket: 0
   playerBody: {fileID: 168099462464290642}
   handPoint: {fileID: 8377522605982242265}

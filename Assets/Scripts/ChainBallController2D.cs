@@ -6,6 +6,21 @@ using UnityEngine.InputSystem;
 
 public class ChainBallController2D : MonoBehaviour
 {
+    //Spin Sound//
+    [Header("Spin Sound")]
+    [SerializeField] private PlayerSound playerSound;
+
+    [SerializeField]
+    [Min(1f)]
+    private float degreesPerSpinSound = 360f;
+
+    private Vector2 previousOrbitDirection;
+    private float accumulatedOrbitDegrees;
+    private bool isTrackingOrbit;
+    private bool wasTrackingPlayerOrbit;
+    //Spin Sound//
+
+    //Socket//
     [Header("Socket State")]
     [SerializeField]
     private bool isAttachedToSocket;
@@ -16,6 +31,7 @@ public class ChainBallController2D : MonoBehaviour
 
     public bool IsAttachedToSocket => isAttachedToSocket;
     public bool IsFocusing => isFocusing;
+    //Socket//
 
     [Header("连接对象")]
     [SerializeField]
@@ -201,6 +217,9 @@ public class ChainBallController2D : MonoBehaviour
         {
             SwingBall();
         }
+
+        // Check whether the ball or player completed a 360-degree orbit.
+        UpdateSpinSound(isSpinning, isPlayerSwinging);
 
         LimitBallSpeed();
     }
@@ -973,4 +992,105 @@ public class ChainBallController2D : MonoBehaviour
         ballBody.linearVelocity = Vector2.zero;
         ballBody.angularVelocity = 0f;
     }
+    //Socket//
+
+    //Spin Sound//
+    private void UpdateSpinSound(
+    bool isBallSpinning,
+    bool isPlayerSpinning)
+    {
+        Vector2 centerPosition;
+        Vector2 movingPosition;
+        bool trackingPlayerOrbit;
+
+        // Player is rotating around the socketed ball.
+        if (isPlayerSpinning &&
+            isAttachedToSocket &&
+            ballPivotBody != null)
+        {
+            centerPosition = ballPivotBody.position;
+            movingPosition = playerBody.position;
+            trackingPlayerOrbit = true;
+        }
+        // Ball is rotating around the player.
+        else if (isBallSpinning &&
+                 spinPivotBody != null)
+        {
+            centerPosition = spinPivotBody.position;
+            movingPosition = ballBody.position;
+            trackingPlayerOrbit = false;
+        }
+        else
+        {
+            ResetSpinSoundTracking();
+            return;
+        }
+
+        Vector2 currentOrbitDirection =
+            movingPosition - centerPosition;
+
+        // The moving object is too close to the pivot.
+        if (currentOrbitDirection.sqrMagnitude < 0.001f)
+        {
+            ResetSpinSoundTracking();
+            return;
+        }
+
+        currentOrbitDirection.Normalize();
+
+        /*
+         * Start tracking without counting the first frame.
+         * Also reset when changing between ball-spin and player-spin.
+         */
+        if (!isTrackingOrbit ||
+            trackingPlayerOrbit != wasTrackingPlayerOrbit)
+        {
+            previousOrbitDirection = currentOrbitDirection;
+            accumulatedOrbitDegrees = 0f;
+            isTrackingOrbit = true;
+            wasTrackingPlayerOrbit = trackingPlayerOrbit;
+            return;
+        }
+
+        float angleThisFrame = Vector2.SignedAngle(
+            previousOrbitDirection,
+            currentOrbitDirection
+        );
+
+        accumulatedOrbitDegrees += angleThisFrame;
+        previousOrbitDirection = currentOrbitDirection;
+
+        // Clockwise 360 degrees.
+        while (accumulatedOrbitDegrees <= -degreesPerSpinSound)
+        {
+            PlayCompletedSpinSound();
+            accumulatedOrbitDegrees += degreesPerSpinSound;
+        }
+
+        // Counterclockwise 360 degrees.
+        while (accumulatedOrbitDegrees >= degreesPerSpinSound)
+        {
+            PlayCompletedSpinSound();
+            accumulatedOrbitDegrees -= degreesPerSpinSound;
+        }
+    }
+    private void PlayCompletedSpinSound()
+    {
+        if (playerSound == null)
+        {
+            return;
+        }
+
+        playerSound.PlayWhoosh();
+    }
+
+    private void ResetSpinSoundTracking()
+    {
+        isTrackingOrbit = false;
+        accumulatedOrbitDegrees = 0f;
+        previousOrbitDirection = Vector2.zero;
+    }
+    //Spin Sound//
+
 }
+
