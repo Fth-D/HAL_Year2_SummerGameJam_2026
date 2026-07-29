@@ -64,8 +64,13 @@ public class ChainBallController2D : MonoBehaviour
     [Header("球体自转视觉")]
     [SerializeField] private float visualSpinSpeed = 720f; // 每秒转多少度，先给个数值再调
     [SerializeField] private bool invertSpinDirection = false; // 如果方向反了，勾这个就好，不用改逻辑
-
     private float currentSpinAngle;
+
+    [Header("球体外观切换")]
+    [SerializeField] private SpriteRenderer ballSpriteRenderer;
+    [SerializeField] private Sprite idleSprite;   // 蓝色，没在用的时候
+    [SerializeField] private Sprite activeSprite; // 红色，玩家在用的时候
+    private bool wasUsingBall;
 
     // 转球时使用的隐藏支点
     private GameObject spinPivotObject;
@@ -226,6 +231,8 @@ public class ChainBallController2D : MonoBehaviour
 
         // Check whether the ball or player completed a 360-degree orbit.
         UpdateSpinSound(isSpinning, isPlayerSwinging);
+
+        UpdateBallSprite(isSpinning, isPlayerSwinging);
 
         LimitBallSpeed();
     }
@@ -951,6 +958,7 @@ public class ChainBallController2D : MonoBehaviour
         return true;
     }
 
+    // 球體逆方向自轉
     private void SpinBallVisual()
     {
         if (Mathf.Approximately(swingInput, 0.0f))
@@ -969,6 +977,28 @@ public class ChainBallController2D : MonoBehaviour
         ballBody.MoveRotation(currentSpinAngle);
     }
 
+    //使用的時候變成紅色
+    private void UpdateBallSprite(bool isSpinning, bool isPlayerSwinging)
+    {
+        if (ballSpriteRenderer == null ||
+            idleSprite == null ||
+            activeSprite == null)
+        {
+            return;
+        }
+
+        bool isUsingBall = isSpinning || isPlayerSwinging;
+
+        if (isUsingBall == wasUsingBall)
+        {
+            return;
+        }
+
+        ballSpriteRenderer.sprite =
+            isUsingBall ? activeSprite : idleSprite;
+
+        wasUsingBall = isUsingBall;
+    }
     /// <summary>
     /// Detaches the ball and reconnects it to the player.
     /// </summary>
