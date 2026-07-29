@@ -47,14 +47,7 @@ public class Player : MonoBehaviour
         {
             playerSound?.PlayPlayerHitWall();
         }
-        else if (collision.gameObject.CompareTag("Teleport"))
-        {
-            playerSound?.PlayTeleport();
-        }
-        else if (collision.gameObject.CompareTag("Laser"))
-        {
-            playerSound?.PlayPlayerHitLaser();
-        }
+
     }
 
     private void OnCollisionExit2D(Collision2D collision)
@@ -65,6 +58,17 @@ public class Player : MonoBehaviour
         }
     }
 
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Teleport"))
+        {
+            playerSound?.PlayTeleport();
+        }
+        else if (other.CompareTag("Laser"))
+        {
+            playerSound?.PlayPlayerHitLaser();
+        }
+    }
 
     private void OnTriggerStay2D(Collider2D other)
     {
