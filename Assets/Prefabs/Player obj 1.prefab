@@ -709,7 +709,7 @@ GameObject:
   - component: {fileID: 262886424044149783}
   - component: {fileID: 5606928023338511118}
   m_Layer: 6
-  m_Name: Circle
+  m_Name: Hammer
   m_TagString: Ball
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -863,7 +863,7 @@ MonoBehaviour:
   maximumBallSpeed: 300
   visualSpinSpeed: 720
   invertSpinDirection: 0
-  ballSpriteRenderer: {fileID: 0}
+  ballSpriteRenderer: {fileID: 6871143665664779756}
   idleSprite: {fileID: 8064836684564780257, guid: f21d221bb6b1ffb40aa068cab3b5192f,
     type: 3}
   activeSprite: {fileID: 1843984973770533340, guid: 5795278795ff36947b573d08455875aa,
