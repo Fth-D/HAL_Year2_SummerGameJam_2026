@@ -15,6 +15,7 @@ public class PlayerSound : MonoBehaviour
     [SerializeField] private AudioClip ball_hit_wall;
     [SerializeField] private AudioClip teleport;
     [SerializeField] private AudioClip player_hit_laser;
+    [SerializeField] private AudioClip socket;
     [SerializeField] private float volume = 1f;
 
     private int lastPlayedIndex = -1;
@@ -77,6 +78,10 @@ public class PlayerSound : MonoBehaviour
     public void PlayPlayerHitLaser()
     {
         PlaySound(player_hit_laser);
+    }
+    public void PlaySocket()
+    {
+        PlaySound(socket);
     }
 
     private void PlaySound(AudioClip clip)

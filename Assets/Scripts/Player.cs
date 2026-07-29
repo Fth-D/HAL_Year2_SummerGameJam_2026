@@ -3,6 +3,9 @@ using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
+    [Header("Sound")]
+    [SerializeField] PlayerSound playerSound;
+
     private Vector2 moveInput;
     private Rigidbody2D rb;
     private bool OldJumpKey = false;
@@ -39,6 +42,21 @@ public class Player : MonoBehaviour
         {
             IsGround = true;
         }
+
+        if (collision.gameObject.CompareTag("Wall"))
+        {
+            playerSound?.PlayPlayerHitWall();
+        }
+
+        if (collision.gameObject.CompareTag("Teleport"))
+        {
+            playerSound?.PlayTeleport();
+        }
+
+        if (collision.gameObject.CompareTag("Laser"))
+        {
+            playerSound?.PlayPlayerHitLaser();
+        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
@@ -72,4 +90,5 @@ public class Player : MonoBehaviour
             IsQuit = false;
         }
     }
+
 }

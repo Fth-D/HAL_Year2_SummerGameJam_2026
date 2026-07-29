@@ -10,6 +10,9 @@ TagManager:
   - Foot
   - QuitArea
   - StartArea
+  - Wall
+  - Teleport
+  - Laser
   layers:
   - Default
   - TransparentFX
@@ -24,8 +27,8 @@ TagManager:
   - StartArea
   - QuitArea
   - Wall
-  - 
-  - 
+  - Teleport
+  - Laser
   - 
   - 
   - 

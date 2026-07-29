@@ -837,7 +837,7 @@ DistanceJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.20743942, y: -0.10063076}
   m_AutoConfigureDistance: 1
-  m_Distance: 14.3278265
+  m_Distance: 6.436839
   m_MaxDistanceOnly: 0
 --- !u!114 &8007632003800740402
 MonoBehaviour:
@@ -1050,6 +1050,7 @@ MonoBehaviour:
   ball_hit_wall: {fileID: 8300000, guid: 808394f63beaa484eb6b1b436eb2b749, type: 3}
   teleport: {fileID: 8300000, guid: c005dbf30f3358744a62fc723cbabd93, type: 3}
   player_hit_laser: {fileID: 8300000, guid: 7924c930e3e2ab249acf4d49e36f4e79, type: 3}
+  socket: {fileID: 8300000, guid: 7dc828dda212acf4690c44d6fddff77e, type: 3}
   volume: 1
 --- !u!1 &5582562092348194805
 GameObject:
@@ -1437,6 +1438,8 @@ GameObject:
   - component: {fileID: 5687354602827377334}
   - component: {fileID: 8531837666960435222}
   - component: {fileID: 3342033707995756115}
+  - component: {fileID: 3325250137127446749}
+  - component: {fileID: 2116846575798437012}
   m_Layer: 7
   m_Name: Player
   m_TagString: Player
@@ -1562,6 +1565,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bf4cd5c117748d4782b280b8b81af5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
+  playerSound: {fileID: 2116846575798437012}
   IsStart: 0
   IsQuit: 0
 --- !u!61 &8531837666960435222
@@ -1629,6 +1633,126 @@ MonoBehaviour:
   maximumDirectionLineLength: 30
   minimumDirectionSpeed: 0.2
   maximumPlayerSpeed: 30
+--- !u!82 &3325250137127446749
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8928009163360014161}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &2116846575798437012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8928009163360014161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f467c4e8922da544f9efce8c4705d988, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerSound
+  audioSource: {fileID: 3325250137127446749}
+  whoosh: {fileID: 8300000, guid: c26d40dc49ba5cd4fb1717b96935f138, type: 3}
+  player_hit_wall:
+  - {fileID: 8300000, guid: f2470fd64a7f2164d87648e896264262, type: 3}
+  - {fileID: 8300000, guid: febf690bd34fc9f43aeab5fd1a58f1dc, type: 3}
+  - {fileID: 8300000, guid: da0b87599a43fa8419c31154f57703f8, type: 3}
+  ball_hit_wall: {fileID: 8300000, guid: 808394f63beaa484eb6b1b436eb2b749, type: 3}
+  teleport: {fileID: 8300000, guid: c005dbf30f3358744a62fc723cbabd93, type: 3}
+  player_hit_laser: {fileID: 8300000, guid: 7924c930e3e2ab249acf4d49e36f4e79, type: 3}
+  socket: {fileID: 8300000, guid: 7dc828dda212acf4690c44d6fddff77e, type: 3}
+  volume: 1
 --- !u!1 &9028023288334480875
 GameObject:
   m_ObjectHideFlags: 0
