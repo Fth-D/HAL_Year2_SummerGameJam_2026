@@ -19,7 +19,6 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ReadInput();
         MoveUpdate();
     }
 
@@ -33,8 +32,6 @@ public class Player : MonoBehaviour
 
 
     }
-    private void ReadInput()
-    {
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
