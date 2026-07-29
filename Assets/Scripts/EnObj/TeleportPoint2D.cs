@@ -2,9 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[RequireComponent(typeof(CircleCollider2D))]
+[RequireComponent(typeof(Collider2D))]
 public class TeleportPoint2D : MonoBehaviour, ITriggerable
 {
+    [Header("Delay")]
+    [SerializeField] HitStop HitStop;
+    [SerializeField] float delay = 2.0f;
+    [SerializeField] bool delayActive = false;
+
     [Header("Teleport Destination")]
     [SerializeField]
     private Transform destinationPoint;
@@ -66,7 +71,7 @@ public class TeleportPoint2D : MonoBehaviour, ITriggerable
     [SerializeField]
     private bool requireExitBeforeReuse = true;
 
-    private CircleCollider2D triggerCollider;
+    private Collider2D triggerCollider;
 
     private bool isActive;
     private bool canTeleport = true;
@@ -75,7 +80,7 @@ public class TeleportPoint2D : MonoBehaviour, ITriggerable
 
     private void Awake()
     {
-        triggerCollider = GetComponent<CircleCollider2D>();
+        triggerCollider = GetComponent<Collider2D>();
         triggerCollider.isTrigger = true;
 
         SetActive(startActive);
@@ -162,6 +167,11 @@ public class TeleportPoint2D : MonoBehaviour, ITriggerable
          */
         Vector2 teleportOffset =
             destinationPosition - playerBody.position;
+
+        if (delayActive)
+        {
+            HitStop.Stop(delay);
+        }
 
         MoveAllBodies(
             bodiesToTeleport,
