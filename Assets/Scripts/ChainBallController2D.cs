@@ -230,7 +230,7 @@ public class ChainBallController2D : MonoBehaviour
         }
 
         // Check whether the ball or player completed a 360-degree orbit.
-        UpdateSpinSound(isSpinning, isPlayerSwinging);
+        UpdateSpinSound();
 
         UpdateBallSprite(isSpinning, isPlayerSwinging);
 
@@ -1051,29 +1051,36 @@ public class ChainBallController2D : MonoBehaviour
     //Socket//
 
     //Spin Sound//
-    private void UpdateSpinSound(
-    bool isBallSpinning,
-    bool isPlayerSpinning)
+    private void UpdateSpinSound()
     {
         Vector2 centerPosition;
         Vector2 movingPosition;
+        Vector2 movingVelocity;
         bool trackingPlayerOrbit;
 
-        // Player is rotating around the socketed ball.
-        if (isPlayerSpinning &&
-            isAttachedToSocket &&
+        /*
+         * When the ball is attached to a socket,
+         * track the Player moving around the Ball.
+         */
+        if (isAttachedToSocket &&
             ballPivotBody != null)
         {
             centerPosition = ballPivotBody.position;
             movingPosition = playerBody.position;
+            movingVelocity = playerBody.linearVelocity;
             trackingPlayerOrbit = true;
         }
-        // Ball is rotating around the player.
-        else if (isBallSpinning &&
-                 spinPivotBody != null)
+        /*
+         * Otherwise, track the Ball moving around the Player.
+         *
+         * This continues working after Q/E is released,
+         * because it checks the Ball's actual position.
+         */
+        else if (spinPivotBody != null)
         {
-            centerPosition = spinPivotBody.position;
+            centerPosition = GetHandPosition();
             movingPosition = ballBody.position;
+            movingVelocity = ballBody.linearVelocity;
             trackingPlayerOrbit = false;
         }
         else
@@ -1082,52 +1089,78 @@ public class ChainBallController2D : MonoBehaviour
             return;
         }
 
-        Vector2 currentOrbitDirection =
+        Vector2 orbitOffset =
             movingPosition - centerPosition;
 
-        // The moving object is too close to the pivot.
-        if (currentOrbitDirection.sqrMagnitude < 0.001f)
+        // Cannot calculate an orbit if too close to the center.
+        if (orbitOffset.sqrMagnitude < 0.001f)
         {
             ResetSpinSoundTracking();
             return;
         }
 
-        currentOrbitDirection.Normalize();
+        Vector2 currentOrbitDirection =
+            orbitOffset.normalized;
 
         /*
-         * Start tracking without counting the first frame.
-         * Also reset when changing between ball-spin and player-spin.
+         * Start or restart tracking when changing between:
+         *
+         * Ball around Player
+         * Player around Ball
          */
         if (!isTrackingOrbit ||
             trackingPlayerOrbit != wasTrackingPlayerOrbit)
         {
-            previousOrbitDirection = currentOrbitDirection;
+            previousOrbitDirection =
+                currentOrbitDirection;
+
             accumulatedOrbitDegrees = 0f;
             isTrackingOrbit = true;
-            wasTrackingPlayerOrbit = trackingPlayerOrbit;
+            wasTrackingPlayerOrbit =
+                trackingPlayerOrbit;
+
             return;
         }
 
-        float angleThisFrame = Vector2.SignedAngle(
-            previousOrbitDirection,
-            currentOrbitDirection
-        );
+        float angleThisFrame =
+            Vector2.SignedAngle(
+                previousOrbitDirection,
+                currentOrbitDirection
+            );
 
-        accumulatedOrbitDegrees += angleThisFrame;
-        previousOrbitDirection = currentOrbitDirection;
+        previousOrbitDirection =
+            currentOrbitDirection;
 
-        // Clockwise 360 degrees.
-        while (accumulatedOrbitDegrees <= -degreesPerSpinSound)
+        /*
+         * Ignore extremely small changes caused by physics jitter
+         * while the object is almost stationary.
+         */
+        if (movingVelocity.sqrMagnitude < 0.01f)
         {
-            PlayCompletedSpinSound();
-            accumulatedOrbitDegrees += degreesPerSpinSound;
+            return;
         }
 
-        // Counterclockwise 360 degrees.
-        while (accumulatedOrbitDegrees >= degreesPerSpinSound)
+        accumulatedOrbitDegrees +=
+            angleThisFrame;
+
+        // Clockwise completed orbit.
+        while (accumulatedOrbitDegrees <=
+               -degreesPerSpinSound)
         {
             PlayCompletedSpinSound();
-            accumulatedOrbitDegrees -= degreesPerSpinSound;
+
+            accumulatedOrbitDegrees +=
+                degreesPerSpinSound;
+        }
+
+        // Counterclockwise completed orbit.
+        while (accumulatedOrbitDegrees >=
+               degreesPerSpinSound)
+        {
+            PlayCompletedSpinSound();
+
+            accumulatedOrbitDegrees -=
+                degreesPerSpinSound;
         }
     }
     private void PlayCompletedSpinSound()
