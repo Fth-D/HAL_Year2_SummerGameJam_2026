@@ -199,8 +199,8 @@ public class BallSocket2D : MonoBehaviour, ITriggerable
 
         attachedBall = null;
 
-        if (requireExitBeforeReattaching)
-            canAttach = false;
+        //if (requireExitBeforeReattaching)
+        //    canAttach = false;
 
         ballToRelease.DetachFromSocket(
             GetWorldReleaseVelocity()

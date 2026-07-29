@@ -106,7 +106,7 @@ GameObject:
   - component: {fileID: 6515205484496125315}
   - component: {fileID: 1507633132843028458}
   m_Layer: 0
-  m_Name: WindBlower
+  m_Name: WindBlower Strong
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -224,7 +224,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 2.5, y: 0}
+  m_Offset: {x: 10, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -234,7 +234,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 5, y: 1}
+  m_Size: {x: 20, y: 1}
   m_EdgeRadius: 0
 --- !u!114 &1507633132843028458
 MonoBehaviour:
@@ -248,9 +248,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a59ef0d33272904c8c835d9845692eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::WindBlower2D
-  blowingLength: 5
+  blowingLength: 20
   blowingWidth: 1
-  blowingStrength: 10
+  blowingStrength: 50
   forceMode: 0
   startActive: 1
   targetLayers:

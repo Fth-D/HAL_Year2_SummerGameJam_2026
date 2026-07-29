@@ -10,15 +10,23 @@ public class CameraFollow : MonoBehaviour
 
     void LateUpdate()
     {
-        Vector3 targetPos = new Vector3(
+        // æ“¾Šß‰ÆYÀ•W
+        float targetY = player.position.y;
+
+        // ŒÀ§Camera Y”Íš¡
+        targetY = Mathf.Clamp(targetY, minY, maxY);
+
+        // •ÛX˜aZ•sÌC‘üˆÚ“®Y
+        Vector3 targetPosition = new Vector3(
         transform.position.x,
-        player.position.y,
+        targetY,
         transform.position.z
         );
 
+        // •½ŠŠˆÚ“®
         transform.position = Vector3.Lerp(
         transform.position,
-        targetPos,
+        targetPosition,
         smoothSpeed * Time.deltaTime
         );
     }

@@ -1,0 +1,873 @@
+fileFormatVersion: 2
+guid: 8cd62c0a0d8758a489584160d303e91c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1494407287746275967
+    second: Lightning Trap_0
+  - first:
+      213: 2667837870811563773
+    second: Lightning Trap_1
+  - first:
+      213: -3975300323885115828
+    second: Lightning Trap_2
+  - first:
+      213: 784355741467467367
+    second: Lightning Trap_3
+  - first:
+      213: 2120680202023044777
+    second: Lightning Trap_4
+  - first:
+      213: 7046869691008127464
+    second: Lightning Trap_5
+  - first:
+      213: -7064512615374990440
+    second: Lightning Trap_6
+  - first:
+      213: 5637576882878325157
+    second: Lightning Trap_7
+  - first:
+      213: 6717834813416650397
+    second: Lightning Trap_8
+  - first:
+      213: 3852719032169187290
+    second: Lightning Trap_9
+  - first:
+      213: -7298830859002699719
+    second: Lightning Trap_10
+  - first:
+      213: -7575778311095429035
+    second: Lightning Trap_11
+  - first:
+      213: 8617370904032912377
+    second: Lightning Trap_12
+  - first:
+      213: 2387025091514001977
+    second: Lightning Trap_13
+  - first:
+      213: -4352669816792103040
+    second: Lightning Trap_14
+  - first:
+      213: 2799103539875008575
+    second: Lightning Trap_15
+  - first:
+      213: -7269641911162264674
+    second: Lightning Trap_16
+  - first:
+      213: -5946313397999581740
+    second: Lightning Trap_17
+  - first:
+      213: -3751677208859591849
+    second: Lightning Trap_18
+  - first:
+      213: 5779710077406211301
+    second: Lightning Trap_19
+  - first:
+      213: 530468616217359320
+    second: Lightning Trap_20
+  - first:
+      213: -4679561861479906280
+    second: Lightning Trap_21
+  - first:
+      213: -5112431411891970606
+    second: Lightning Trap_22
+  - first:
+      213: -4607465239839793904
+    second: Lightning Trap_23
+  - first:
+      213: 5318357289976532649
+    second: Lightning Trap_24
+  - first:
+      213: -5717772779937980789
+    second: Lightning Trap_25
+  - first:
+      213: -9005127865073015874
+    second: Lightning Trap_26
+  - first:
+      213: -2944240159624349091
+    second: Lightning Trap_27
+  - first:
+      213: 3095351828269170844
+    second: Lightning Trap_28
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Lightning Trap_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 84
+        width: 47
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f7a2fdfa2833db410800000000000000
+      internalID: 1494407287746275967
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning Trap_1
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 84
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df6ce00a860160520800000000000000
+      internalID: 2667837870811563773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning Trap_2
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 84
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c46155fda65e4d8c0800000000000000
+      internalID: -3975300323885115828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning Trap_3
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 0
+        width: 57
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 76ed4b3246792ea00800000000000000
+      internalID: 784355741467467367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning Trap_4
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 0
+        width: 58
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9a689cb686b2e6d10800000000000000
+      internalID: 2120680202023044777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning Trap_5
+      rect:
+        serializedVersion: 2
+        x: 503
+        y: 0
+        width: 58
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8e19107e5a28bc160800000000000000
+      internalID: 7046869691008127464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning Trap_6
+      rect:
+        serializedVersion: 2
+        x: 599
+        y: 0
+        width: 58
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 893de49a43fc5fd90800000000000000
+      internalID: -7064512615374990440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning Trap_7
+      rect:
+        serializedVersion: 2
+        x: 695
+        y: 0
+        width: 58
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a1aae94e42bc3e40800000000000000
+      internalID: 5637576882878325157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning Trap_8
+      rect:
+        serializedVersion: 2
+        x: 791
+        y: 0
+        width: 58
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d96b3719b2b8a3d50800000000000000
+      internalID: 6717834813416650397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning Trap_9
+      rect:
+        serializedVersion: 2
+        x: 887
+        y: 0
+        width: 58
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad7c4d31c8b977530800000000000000
+      internalID: 3852719032169187290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning Trap_10
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 0
+        width: 57
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9302c7d210855ba90800000000000000
+      internalID: -7298830859002699719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning Trap_11
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 0
+        width: 56
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5585c06a3cd6dd690800000000000000
+      internalID: -7575778311095429035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning Trap_12
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 0
+        width: 56
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f32ba03e2d079770800000000000000
+      internalID: 8617370904032912377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning Trap_13
+      rect:
+        serializedVersion: 2
+        x: 1272
+        y: 0
+        width: 56
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93ae2a97caa602120800000000000000
+      internalID: 2387025091514001977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning Trap_14
+      rect:
+        serializedVersion: 2
+        x: 1367
+        y: 0
+        width: 57
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 087ca81fcd53893c0800000000000000
+      internalID: -4352669816792103040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning Trap_15
+      rect:
+        serializedVersion: 2
+        x: 1463
+        y: 0
+        width: 58
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f30d9c7d6d968d620800000000000000
+      internalID: 2799103539875008575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning Trap_16
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 0
+        width: 58
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e93a1e0b23b0d1b90800000000000000
+      internalID: -7269641911162264674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning Trap_17
+      rect:
+        serializedVersion: 2
+        x: 1655
+        y: 0
+        width: 58
+        height: 96
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d5c61d28737a7da0800000000000000
+      internalID: -5946313397999581740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning Trap_18
+      rect:
+        serializedVersion: 2
+        x: 1751
+        y: 69
+        width: 49
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75bbefda47d5febc0800000000000000
+      internalID: -3751677208859591849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning Trap_19
+      rect:
+        serializedVersion: 2
+        x: 1847
+        y: 83
+        width: 48
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ecea8471b7a53050800000000000000
+      internalID: 5779710077406211301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning Trap_20
+      rect:
+        serializedVersion: 2
+        x: 1943
+        y: 84
+        width: 48
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d3f02a556a9c5700800000000000000
+      internalID: 530468616217359320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning Trap_21
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 84
+        width: 47
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: beeab49959105834ba036325f78b56c0
+      internalID: 64225466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning Trap_22
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 0
+        width: 56
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f9328e86f1fe514eaabd353d756c29f
+      internalID: -1810400934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning Trap_23
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 0
+        width: 56
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4873f3bcda9abeb4ebff72e73bbd1cee
+      internalID: -1704260084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning Trap_24
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 56
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 274f7b89301e8964999ab5f705b02995
+      internalID: -1777182100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning Trap_25
+      rect:
+        serializedVersion: 2
+        x: 1751
+        y: 0
+        width: 58
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ec8ec3b648d8674eaf90c0a2b5f2d72
+      internalID: -777325633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning Trap_26
+      rect:
+        serializedVersion: 2
+        x: 1847
+        y: 0
+        width: 58
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e36e3548e198244390e0fe5eeb17ecd
+      internalID: -551524271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning Trap_27
+      rect:
+        serializedVersion: 2
+        x: 1943
+        y: 0
+        width: 58
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f70e17597a437d54fa362039d142e6b3
+      internalID: -2129113742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Lightning Trap_28
+      rect:
+        serializedVersion: 2
+        x: 2040
+        y: 0
+        width: 57
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cfce2d8d167fbe4da9689ef80983533
+      internalID: 503883020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a8bb469f2298d0341b8238a62fb73adb
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":64.0,"y":64.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":0,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      Lightning Trap_0: 1494407287746275967
+      Lightning Trap_1: 2667837870811563773
+      Lightning Trap_10: -7298830859002699719
+      Lightning Trap_11: -7575778311095429035
+      Lightning Trap_12: 8617370904032912377
+      Lightning Trap_13: 2387025091514001977
+      Lightning Trap_14: -4352669816792103040
+      Lightning Trap_15: 2799103539875008575
+      Lightning Trap_16: -7269641911162264674
+      Lightning Trap_17: -5946313397999581740
+      Lightning Trap_18: -3751677208859591849
+      Lightning Trap_19: 5779710077406211301
+      Lightning Trap_2: -3975300323885115828
+      Lightning Trap_20: 530468616217359320
+      Lightning Trap_21: 64225466
+      Lightning Trap_22: -1810400934
+      Lightning Trap_23: -1704260084
+      Lightning Trap_24: -1777182100
+      Lightning Trap_25: -777325633
+      Lightning Trap_26: -551524271
+      Lightning Trap_27: -2129113742
+      Lightning Trap_28: 503883020
+      Lightning Trap_3: 784355741467467367
+      Lightning Trap_4: 2120680202023044777
+      Lightning Trap_5: 7046869691008127464
+      Lightning Trap_6: -7064512615374990440
+      Lightning Trap_7: 5637576882878325157
+      Lightning Trap_8: 6717834813416650397
+      Lightning Trap_9: 3852719032169187290
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
