@@ -933,6 +933,7 @@ public class ChainBallController2D : MonoBehaviour
         if (isFocusing)
             EndFocus();
 
+        playerSound?.PlaySocket();
         currentSocketPoint = socketPoint;
         isAttachedToSocket = true;
 
@@ -1034,6 +1035,7 @@ public class ChainBallController2D : MonoBehaviour
 
     private void HoldBallAtSocket()
     {
+
         if (currentSocketPoint == null)
         {
             DetachFromSocket();
@@ -1146,5 +1148,14 @@ public class ChainBallController2D : MonoBehaviour
     }
     //Spin Sound//
 
+    //Wall Hit Sound//
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("Wall"))
+        {
+            playerSound?.PlayBallHitWall();
+        }
+    }
+    //Wall Hit Sound//
 }
 
