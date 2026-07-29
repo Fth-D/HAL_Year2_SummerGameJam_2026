@@ -61,6 +61,11 @@ public class ChainBallController2D : MonoBehaviour
     private Rigidbody2D ballBody;
     private DistanceJoint2D distanceJoint;
 
+    [Header("球体自转视觉")]
+    [SerializeField] private float visualSpinSpeed = 720f; // 每秒转多少度，先给个数值再调
+    [SerializeField] private bool invertSpinDirection = false; // 如果方向反了，勾这个就好，不用改逻辑
+
+    private float currentSpinAngle;
 
     // 转球时使用的隐藏支点
     private GameObject spinPivotObject;
@@ -216,6 +221,7 @@ public class ChainBallController2D : MonoBehaviour
         else if (isSpinning)
         {
             SwingBall();
+            SpinBallVisual();
         }
 
         // Check whether the ball or player completed a 360-degree orbit.
@@ -943,6 +949,24 @@ public class ChainBallController2D : MonoBehaviour
             directionLine.enabled = false;
 
         return true;
+    }
+
+    private void SpinBallVisual()
+    {
+        if (Mathf.Approximately(swingInput, 0.0f))
+        {
+            return; // 没有输入时不转，停在当前角度
+        }
+
+        float direction = invertSpinDirection ? 1f : -1f;
+
+        currentSpinAngle +=
+            direction
+            * Mathf.Sign(swingInput)
+            * visualSpinSpeed
+            * Time.fixedDeltaTime;
+
+        ballBody.MoveRotation(currentSpinAngle);
     }
 
     /// <summary>
