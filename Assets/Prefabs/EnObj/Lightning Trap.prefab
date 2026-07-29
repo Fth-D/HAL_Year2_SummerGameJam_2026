@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1557545273212728973}
   m_Layer: 14
   m_Name: Lightning Trap
-  m_TagString: Untagged
+  m_TagString: Laser
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
