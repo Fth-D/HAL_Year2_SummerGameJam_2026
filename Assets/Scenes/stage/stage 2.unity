@@ -86833,7 +86833,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2059348601
 Transform:
   m_ObjectHideFlags: 0
@@ -86964,8 +86964,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2e9d4bf93121848b4ceeae3d8a4557, type: 3}
   m_Name: 
   m_EditorClassIdentifier: '::'
+  onlyX: 0
+  onlyY: 1
   player: {fileID: 1551122480}
   smoothSpeed: 5
+  minX: 0
+  maxX: 0
   minY: 0
   maxY: 21
 --- !u!1 &2076931560

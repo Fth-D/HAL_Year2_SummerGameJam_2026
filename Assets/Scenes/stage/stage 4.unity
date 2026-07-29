@@ -1067,8 +1067,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2e9d4bf93121848b4ceeae3d8a4557, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraFollow
+  onlyX: 0
+  onlyY: 1
   player: {fileID: 162760408}
   smoothSpeed: 5
+  minX: 0
+  maxX: 0
   minY: 0
   maxY: 21
 --- !u!114 &201765992
@@ -13133,12 +13137,12 @@ PrefabInstance:
     - target: {fileID: 727312751220903378, guid: ab01382b0c9bfdf4db74b241433b9696,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -20
+      value: -13.4
       objectReference: {fileID: 0}
     - target: {fileID: 727312751220903378, guid: ab01382b0c9bfdf4db74b241433b9696,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 37.6
+      value: 45.5
       objectReference: {fileID: 0}
     - target: {fileID: 727312751220903378, guid: ab01382b0c9bfdf4db74b241433b9696,
         type: 3}
@@ -46527,7 +46531,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.0995636, y: 10.896408}
+  m_Offset: {x: 15.509697, y: 10.896408}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -46537,7 +46541,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 52.773323, y: 51.268143}
+  m_Size: {x: 83.99184, y: 51.268143}
   m_EdgeRadius: 0
 --- !u!1 &1117735215
 GameObject:
@@ -56149,8 +56153,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2e9d4bf93121848b4ceeae3d8a4557, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraFollow
+  onlyX: 1
+  onlyY: 1
   player: {fileID: 162760408}
   smoothSpeed: 5
+  minX: 0
+  maxX: 0
   minY: 0
   maxY: 21
 --- !u!114 &1569770403
@@ -91537,8 +91545,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e2e9d4bf93121848b4ceeae3d8a4557, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraFollow
+  onlyX: 0
+  onlyY: 1
   player: {fileID: 162760408}
   smoothSpeed: 5
+  minX: 0
+  maxX: 0
   minY: 0
   maxY: 21
 --- !u!1001 &2062576749
