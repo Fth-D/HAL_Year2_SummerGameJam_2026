@@ -837,7 +837,7 @@ DistanceJoint2D:
   m_Anchor: {x: 0, y: 0}
   m_ConnectedAnchor: {x: 0.20743942, y: -0.10063076}
   m_AutoConfigureDistance: 1
-  m_Distance: 4.0444407
+  m_Distance: 14.3278265
   m_MaxDistanceOnly: 0
 --- !u!114 &8007632003800740402
 MonoBehaviour:
@@ -861,6 +861,13 @@ MonoBehaviour:
   swingForce: 10
   playerSwingForce: 35
   maximumBallSpeed: 300
+  visualSpinSpeed: 720
+  invertSpinDirection: 0
+  ballSpriteRenderer: {fileID: 0}
+  idleSprite: {fileID: 8064836684564780257, guid: f21d221bb6b1ffb40aa068cab3b5192f,
+    type: 3}
+  activeSprite: {fileID: 1843984973770533340, guid: 5795278795ff36947b573d08455875aa,
+    type: 3}
   directionLine: {fileID: 4838456877085341602}
   minimumDirectionLineLength: 0.5
   maximumDirectionLineLength: 15
