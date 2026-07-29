@@ -8,6 +8,8 @@ TagManager:
   - Ground
   - Ball
   - Foot
+  - QuitArea
+  - StartArea
   layers:
   - Default
   - TransparentFX
@@ -19,8 +21,8 @@ TagManager:
   - Player
   - Ground
   - Chain ball
-  - 
-  - 
+  - StartArea
+  - QuitArea
   - 
   - 
   - 

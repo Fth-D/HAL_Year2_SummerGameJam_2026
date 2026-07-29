@@ -8,10 +8,12 @@ public class Player : MonoBehaviour
     private bool OldJumpKey = false;
     private bool NewJumpKey = false;
     private bool IsGround = false;
+    public bool IsStart;
+    public bool IsQuit;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -33,43 +35,6 @@ public class Player : MonoBehaviour
     }
     private void ReadInput()
     {
-        Keyboard keyboard = Keyboard.current;
-
-        if (keyboard == null)
-        {
-            moveInput = Vector2.zero;
-            return;
-        }
-
-        //==============================
-        // 角色移动输入
-        //==============================
-
-        moveInput = Vector2.zero;
-
-        if (keyboard.aKey.isPressed)
-        {
-            moveInput.x -= 1.0f;
-        }
-
-        if (keyboard.dKey.isPressed)
-        {
-            moveInput.x += 1.0f;
-        }
-        //if (keyboard.sKey.isPressed)
-        //{
-        //    moveInput.y -= 0.5f;
-        //}
-
-        OldJumpKey = NewJumpKey;
-        NewJumpKey = (keyboard.wKey.isPressed || keyboard.spaceKey.isPressed);
-
-        bool JumpTrigger = (!OldJumpKey && NewJumpKey); ;
-        if (IsGround && JumpTrigger)
-        {
-            moveInput.y += 30.0f;
-        }
-    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -84,6 +49,30 @@ public class Player : MonoBehaviour
         if (collision.gameObject.CompareTag("Ground"))
         {
             IsGround = false;
+        }
+    }
+
+
+    private void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.CompareTag("StartArea"))
+        {
+            IsStart=true;
+        }
+        else if (other.CompareTag("QuitArea"))
+        {
+            IsQuit=true;
+        }   
+    }
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("StartArea"))
+        {
+            IsStart = false;
+        }
+        else if (other.CompareTag("QuitArea"))
+        {
+            IsQuit = false;
         }
     }
 }

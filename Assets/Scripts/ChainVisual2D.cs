@@ -96,7 +96,7 @@ public class ChainVisual2D : MonoBehaviour
                     direction.x
                 )
                 * Mathf.Rad2Deg
-                - 90.0f;
+                + 90.0f;
 
             links[i].rotation =
                 Quaternion.Euler(
