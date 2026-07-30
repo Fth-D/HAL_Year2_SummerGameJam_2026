@@ -158,7 +158,10 @@ public class BallSocket2D : MonoBehaviour, ITriggerable
         }
 
         bool attached =
-            ball.AttachToSocket(attachmentPoint);
+    ball.AttachToSocket(
+        this,
+        attachmentPoint
+    );
 
         if (!attached)
             return false;
@@ -197,14 +200,39 @@ public class BallSocket2D : MonoBehaviour, ITriggerable
         ChainBallController2D ballToRelease =
             attachedBall;
 
-        attachedBall = null;
-
-        //if (requireExitBeforeReattaching)
-        //    canAttach = false;
-
+        /*
+         * Do not clear attachedBall here.
+         * DetachFromSocket will call NotifyBallDetached().
+         */
         ballToRelease.DetachFromSocket(
             GetWorldReleaseVelocity()
         );
+    }
+    /// <summary>
+    /// Called by the ball when it detaches itself.
+    /// This clears the socket's internal occupied state.
+    /// </summary>
+    public void NotifyBallDetached(
+        ChainBallController2D ball)
+    {
+        if (attachedBall != ball)
+            return;
+
+        attachedBall = null;
+        nearbyBall = null;
+
+        /*
+         * The ball must leave the trigger before it can attach again.
+         * This prevents it from instantly snapping back into the socket.
+         */
+        if (requireExitBeforeReattaching)
+        {
+            canAttach = false;
+        }
+        else
+        {
+            canAttach = true;
+        }
     }
 
     private Vector2 GetWorldReleaseVelocity()

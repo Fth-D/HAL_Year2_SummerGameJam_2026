@@ -16,7 +16,7 @@ public class PlayerSound : MonoBehaviour
     [SerializeField] private AudioClip teleport;
     [SerializeField] private AudioClip player_hit_laser;
     [SerializeField] private AudioClip socket;
-    [SerializeField] private float volume = 1f;
+    [SerializeField] private float volume = 0.8f;
 
     private int lastPlayedIndex = -1;
 
@@ -30,7 +30,7 @@ public class PlayerSound : MonoBehaviour
 
     public void PlayWhoosh()
     {
-        PlaySound(whoosh);
+        PlaySound(whoosh, 1f);
     }
 
     public void PlayPlayerHitWall()
@@ -67,30 +67,30 @@ public class PlayerSound : MonoBehaviour
 
     public void PlayBallHitWall()
     {
-        PlaySound(ball_hit_wall);
+        PlaySound(ball_hit_wall, 0.6f);
     }
 
     public void PlayTeleport()
     {
-        PlaySound(teleport);
+        PlaySound(teleport, 1f);
     }
 
     public void PlayPlayerHitLaser()
     {
-        PlaySound(player_hit_laser);
+        PlaySound(player_hit_laser, 1f);
     }
     public void PlaySocket()
     {
-        PlaySound(socket);
+        PlaySound(socket, 1f);
     }
 
-    private void PlaySound(AudioClip clip)
+    private void PlaySound(AudioClip clip, float volume)
     {
         if (audioSource == null || clip == null)
         {
             return;
         }
 
-        audioSource.PlayOneShot(clip);
+        audioSource.PlayOneShot(clip, volume);
     }
 }

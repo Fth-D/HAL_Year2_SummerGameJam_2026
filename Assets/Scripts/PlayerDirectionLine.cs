@@ -56,8 +56,8 @@ public class PlayerDirectionLine : MonoBehaviour
         directionLine.positionCount = 2;
         directionLine.useWorldSpace = true;
 
-        directionLine.startWidth = 0.15f;
-        directionLine.endWidth = 0.15f;
+        directionLine.startWidth = 1.15f;
+        directionLine.endWidth = 1.15f;
         
         directionLine.startColor = Color.green;
         directionLine.endColor = Color.green;

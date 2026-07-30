@@ -24,6 +24,7 @@ public class ChainBallController2D : MonoBehaviour
     [Header("Socket State")]
     [SerializeField]
     private bool isAttachedToSocket;
+    private BallSocket2D currentSocket;
 
     private Transform currentSocketPoint;
     private RigidbodyType2D bodyTypeBeforeSocket;
@@ -160,6 +161,11 @@ public class ChainBallController2D : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (isAttachedToSocket)
+        {
+            HoldBallAtSocket();
+        }
+
         // 当前是否正在主动转球
         bool isSpinning =
             !Mathf.Approximately(swingInput, 0.0f);
@@ -415,16 +421,23 @@ public class ChainBallController2D : MonoBehaviour
     //解除固定球
     private void EndPlayerSwing()
     {
-        DetachFromSocket();
-        if (ballLockJoint == null)
+        if (ballLockJoint != null)
         {
-            return;
+            ballLockJoint.enabled = false;
         }
 
-        ballLockJoint.enabled =
-            false;
-
-        ConnectJointToPlayer();
+        /*
+         * Releasing the player-swing command also releases
+         * the ball from the socket.
+         */
+        if (isAttachedToSocket)
+        {
+            DetachFromSocket();
+        }
+        else
+        {
+            ConnectJointToPlayer();
+        }
     }
     private void MoveSpinPivotToHand()
     {
@@ -818,11 +831,8 @@ public class ChainBallController2D : MonoBehaviour
         directionLine.useWorldSpace = true;
 
         // 测试时设置得明显一点
-        directionLine.startWidth = 0.15f;
-        directionLine.endWidth = 0.15f;
-
-        directionLine.startColor = Color.red;
-        directionLine.endColor = Color.red;
+        directionLine.startWidth = 1.0f;
+        directionLine.endWidth = 1.0f;
 
         // 保证显示在其他Sprite上面
         directionLine.sortingOrder = 100;
@@ -915,8 +925,20 @@ public class ChainBallController2D : MonoBehaviour
     /// <summary>
     /// Attempts to attach the chain ball to a socket point.
     /// </summary>
-    public bool AttachToSocket(Transform socketPoint)
+    public bool AttachToSocket(
+       BallSocket2D socket,
+       Transform socketPoint)
     {
+        if (socket == null)
+        {
+            Debug.LogWarning(
+                "ChainBallController2D: Socket is null.",
+                this
+            );
+
+            return false;
+        }
+
         if (socketPoint == null)
         {
             Debug.LogWarning(
@@ -933,28 +955,50 @@ public class ChainBallController2D : MonoBehaviour
         if (isFocusing)
             EndFocus();
 
-        playerSound?.PlaySocket();
+        currentSocket = socket;
         currentSocketPoint = socketPoint;
         isAttachedToSocket = true;
 
-        bodyTypeBeforeSocket = ballBody.bodyType;
-        gravityScaleBeforeSocket = ballBody.gravityScale; 
+        playerSound?.PlaySocket();
+
+        bodyTypeBeforeSocket =
+            ballBody.bodyType;
+
+        gravityScaleBeforeSocket =
+            ballBody.gravityScale;
+
+        /*
+         * The socket temporarily replaces the normal ball movement.
+         * Disable any player-swing lock left from a previous state.
+         */
+        if (ballLockJoint != null)
+            ballLockJoint.enabled = false;
 
         ballBody.linearVelocity = Vector2.zero;
         ballBody.angularVelocity = 0f;
 
-        // A kinematic body will remain locked in the socket.
-        ballBody.bodyType = RigidbodyType2D.Kinematic;
+        ballBody.bodyType =
+            RigidbodyType2D.Kinematic;
+
         ballBody.gravityScale = 0f;
 
-        ballBody.position = currentSocketPoint.position;
-        ballBody.rotation = currentSocketPoint.eulerAngles.z;
+        ballBody.position =
+            currentSocketPoint.position;
+
+        ballBody.rotation =
+            currentSocketPoint.eulerAngles.z;
 
         swingInput = 0f;
+        playerSwingInput = 0f;
         hasPlayerMoveInput = false;
+
+        wasPlayerSwinging = false;
+        wasUsingSpinPivot = false;
 
         if (directionLine != null)
             directionLine.enabled = false;
+
+        ResetSpinSoundTracking();
 
         return true;
     }
@@ -1011,42 +1055,91 @@ public class ChainBallController2D : MonoBehaviour
     /// <summary>
     /// Detaches the ball with an optional release velocity.
     /// </summary>
-    public bool DetachFromSocket(Vector2 releaseVelocity)
+    public bool DetachFromSocket(
+    Vector2 releaseVelocity)
     {
         if (!isAttachedToSocket)
             return false;
 
+        /*
+         * Save the socket before clearing the ball state,
+         * because it must be notified afterward.
+         */
+        BallSocket2D socketToNotify =
+            currentSocket;
+
         isAttachedToSocket = false;
+
+        currentSocket = null;
         currentSocketPoint = null;
 
-        ballBody.bodyType = bodyTypeBeforeSocket;
-        ballBody.gravityScale = gravityScaleBeforeSocket;
+        if (ballLockJoint != null)
+            ballLockJoint.enabled = false;
 
-        ballBody.linearVelocity = releaseVelocity;
+        ballBody.bodyType =
+            bodyTypeBeforeSocket;
+
+        ballBody.gravityScale =
+            gravityScaleBeforeSocket;
+
+        ballBody.linearVelocity =
+            releaseVelocity;
+
         ballBody.angularVelocity = 0f;
 
         distanceJoint.enabled = true;
         ConnectJointToPlayer();
 
+        playerSwingInput = 0f;
+        wasPlayerSwinging = false;
         wasUsingSpinPivot = false;
+
+        ResetSpinSoundTracking();
+
+        /*
+         * Tell the socket that it is no longer occupied.
+         */
+        if (socketToNotify != null)
+        {
+            socketToNotify.NotifyBallDetached(this);
+        }
 
         return true;
     }
 
     private void HoldBallAtSocket()
     {
-
         if (currentSocketPoint == null)
         {
             DetachFromSocket();
             return;
         }
 
-        ballBody.MovePosition(currentSocketPoint.position);
-        ballBody.MoveRotation(currentSocketPoint.eulerAngles.z);
+        Vector2 socketPosition =
+            currentSocketPoint.position;
+
+        ballBody.position = socketPosition;
+        ballBody.rotation =
+            currentSocketPoint.eulerAngles.z;
 
         ballBody.linearVelocity = Vector2.zero;
         ballBody.angularVelocity = 0f;
+
+        /*
+         * SwingPlayer uses ballPivotBody as its center,
+         * so it must remain at the socket position.
+         */
+        if (ballPivotBody != null)
+        {
+            ballPivotBody.position =
+                socketPosition;
+
+            ballPivotBody.linearVelocity =
+                Vector2.zero;
+
+            ballPivotBody.angularVelocity =
+                0f;
+        }
     }
     //Socket//
 

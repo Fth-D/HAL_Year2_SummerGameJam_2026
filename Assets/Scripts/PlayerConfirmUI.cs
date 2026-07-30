@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
+using UnityEngine.InputSystem;
 
 public class PlayerConfirmUI : MonoBehaviour
 {
@@ -17,7 +18,11 @@ public class PlayerConfirmUI : MonoBehaviour
 
     [Header("确认需要的时间")]
     [SerializeField]
-    private float confirmTime = 3.0f;
+    private float StartconfirmTime = 3.0f;
+
+    [Header("确认需要的时间")]
+    [SerializeField]
+    private float QuitconfirmTime = 100.0f;
 
     [Header("开始后进入的场景")]
     [SerializeField]
@@ -30,10 +35,10 @@ public class PlayerConfirmUI : MonoBehaviour
     private bool actionTriggered;
 
     public bool IsStartConfirmed =>
-        startTimer >= confirmTime;
+        startTimer >= StartconfirmTime;
 
     public bool IsQuitConfirmed =>
-        quitTimer >= confirmTime;
+        quitTimer >= QuitconfirmTime;
 
     private void Awake()
     {
@@ -59,11 +64,14 @@ public class PlayerConfirmUI : MonoBehaviour
     {
         if (player != null && player.IsStart)
         {
+            Keyboard keyboard = Keyboard.current;
+
+
             startTimer += Time.unscaledDeltaTime;
 
             float remainingTime =
                 Mathf.Max(
-                    confirmTime - startTimer,
+                    StartconfirmTime - startTimer,
                     0.0f
                 );
 
@@ -72,11 +80,12 @@ public class PlayerConfirmUI : MonoBehaviour
                 startText.enabled = true;
 
                 startText.text =
-                    $"starting in {remainingTime:F1}";
+                    $"Shift to Start";
             }
 
             // 时间到了，开始游戏
-            if (startTimer >= confirmTime)
+            if (keyboard.leftShiftKey.isPressed ||
+            keyboard.rightShiftKey.isPressed)
             {
                 StartGame();
             }
@@ -91,11 +100,13 @@ public class PlayerConfirmUI : MonoBehaviour
     {
         if (player != null && player.IsQuit)
         {
+            Keyboard keyboard = Keyboard.current;
+
             quitTimer += Time.unscaledDeltaTime;
 
             float remainingTime =
                 Mathf.Max(
-                    confirmTime - quitTimer,
+                    QuitconfirmTime - quitTimer,
                     0.0f
                 );
 
@@ -104,11 +115,12 @@ public class PlayerConfirmUI : MonoBehaviour
                 quitText.enabled = true;
 
                 quitText.text =
-                    $"Leaving in {remainingTime:F1}";
+                    $"Shift to Quit";
             }
 
             // 时间到了，退出游戏
-            if (quitTimer >= confirmTime)
+            if (keyboard.leftShiftKey.isPressed ||
+            keyboard.rightShiftKey.isPressed)
             {
                 QuitGame();
             }
